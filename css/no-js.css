@@ -1,0 +1,7 @@
+#preloader-container {
+    display: none;
+}
+
+section {
+    opacity: 1;
+}
