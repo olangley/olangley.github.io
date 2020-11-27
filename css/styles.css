@@ -28,7 +28,7 @@ section {
   background: linear-gradient(
     rgba(116, 67, 62, 0.22), 
     rgba(116, 67, 62, 0.22)
-  ), no-repeat center fixed url(../images/texture3.jpg);
+  ), no-repeat center fixed url(../images/texture.jpg);
   background-size: cover;
 }
 
@@ -224,7 +224,7 @@ a, a:hover, a:visited {
   background: linear-gradient(
     rgba(116, 67, 62, 0.22), 
     rgba(116, 67, 62, 0.22)
-  ), no-repeat center fixed url(../images/texture3.jpg);
+  ), no-repeat center fixed url(../images/texture.jpg);
   background-size: cover;
 }
 
@@ -351,7 +351,7 @@ ul {
   background: linear-gradient(
     rgba(116, 67, 62, 0.22), 
     rgba(116, 67, 62, 0.22)
-  ), no-repeat center fixed url(../images/texture3.jpg);
+  ), no-repeat center fixed url(../images/texture.jpg);
   background-size: cover;
   color: #333;
   padding: 15px 20px 15px 20px;
