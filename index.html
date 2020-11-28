@@ -7,11 +7,11 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/navbar.css">
         <link rel="stylesheet" href="css/preloader.css">
+        <link rel="stylesheet" href="css/fonts.css">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-        <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&family=Zilla+Slab:ital,wght@1,300;1,400;1,600&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="https://kit.fontawesome.com/e0a97e5d0b.js" crossorigin="anonymous"></script>
@@ -35,7 +35,7 @@
               </div>
           </div>
       </nav>
-      <section id="home">
+      <section class="overlay">
         <div id="home-container">
           <div id="sketch-container">
             <img id="sketch" src="images/sketch.png">
@@ -43,9 +43,9 @@
               &copy; <a target="_blank" href="https://ndsun.net/" id="sketch-link">Andy Sun</a>
             </p>
           </div>
-          <div id="home-text">
-            <h1 id="speech-bubble">Hey there! I'm Olivia.</h1>
-            <p>I graduated from <a target="_blank" href="https://www.brown.edu/">Brown University</a> in Spring 2020 with a double major in computer science and music, and I'll be starting at <a target="_blank" href="https://www.netspi.com/">NetSPI</a> as an Associate Security Consultant in January 2021.</p>
+          <div id="home-text" class="space-between">
+            <div id="speech-bubble">Hey there! I'm Olivia.</div>
+            <div>I graduated from <a target="_blank" href="https://www.brown.edu/">Brown University</a> in Spring 2020 with a double major in computer science and music, and I'll be starting at <a target="_blank" href="https://www.netspi.com/">NetSPI</a> as an Associate Security Consultant in January 2021.</div>
             <div id="home-links">
                 <a target="_blank" href="mailto:olivia.s.langley@gmail.com" class="home-link">
                   <i class="fas fa-envelope" style="margin-left: 1px;"></i>
@@ -59,30 +59,28 @@
             </div>
           </div>
         </div>
-        <a href="#about" class="arrow-wrapper">
-          <i class="fas fa-angle-double-down arrow"></i>
+        <a href="#about" id="arrow-wrapper">
+          <i id="arrow" class="fas fa-angle-double-down"></i>
         </a>
       </section>
       <section id="about">
-        <div id="about-container-1">
-          <h2 id="about-header"><span>About</span></h2>
-          <div id="about-container-2">
-            <div>
-              <p>Hi!  &#128075; Thanks for visiting my website! My name is <b>Olivia Langley</b>, and I'm a recent graduate of the computer science program at <a target="_blank" href="https://www.brown.edu/">Brown University</a> in Providence, RI.</p>
-              <p>My first exposure to programming was playing around with an early version of <a target="_blank" href="https://scratch.mit.edu/">Scratch</a> back in elementary school. I was completely fascinated, and spent hours designing overly complicated mazes and painstakingly drawing my own custom sprites. Despite this early introduction to the ~wonders of code~, I didn't seriously start considering computer science as a career option until the summer before my freshman year of college, when I stumbled upon a documentary about recent developments in <b>computer security</b> and the race to stay ahead of the curve against cybercriminals. I was hooked immediately, to the point that I decided &#x2014; almost overnight &#x2014; that I wanted to major in computer science.</p>
-            </div>
+        <div id="about-container">
+          <h1 class="left-header"><span>About</span></h1>
+          <div>
             <img id="portrait" src="images/portrait.png">
+            <p>Hi!  &#128075; Thanks for visiting my website! My name is <b>Olivia Langley</b>, and I'm a recent graduate of the computer science program at <a target="_blank" href="https://www.brown.edu/">Brown University</a> in Providence, RI.</p>
+            <p>My first exposure to programming was playing around with an early version of <a target="_blank" href="https://scratch.mit.edu/">Scratch</a> back in elementary school. I was completely fascinated, and spent hours designing overly complicated mazes and painstakingly drawing my own custom sprites. Despite this early introduction to the ~wonders of code~, I didn't seriously start considering computer science as a career option until the summer before my freshman year of college, when I stumbled upon a documentary about recent developments in <b>computer security</b> and the race to stay ahead of the curve against cybercriminals. I was hooked immediately, to the point that I decided &#x2014; almost overnight &#x2014; that I wanted to major in computer science.</p>
           </div>
-          <p>In Summer 2019 I was an intern on the Information Security team at <a target="_blank" href="https://www.qorvo.com/">Qorvo</a>, and in Spring 2020 I was a Head TA for <a target="_blank" href="https://cs.brown.edu/courses/csci1660/">CSCI1660 (Computer Systems Security)</a> at Brown University. Starting in January I'll be joining <a target="_blank" href="https://www.netspi.com/">NetSPI</a>, a penetration testing company based in Minneapolis, as an Associate Security Consultant.</p>
+          <p>In Summer 2019 I was an intern on the Information Security team at <a target="_blank" href="https://www.qorvo.com/">Qorvo</a>, and in Spring 2020 I was a Head TA for <a target="_blank" href="https://cs.brown.edu/courses/csci1660/">CSCI1660 (Computer Systems Security)</a>. Starting in January I'll be joining <a target="_blank" href="https://www.netspi.com/">NetSPI</a>, a penetration testing company based in Minneapolis, as an Associate Security Consultant.</p>
           <p>Outside of computer science, I’m a big fan of live looping, classic rock, and cheering on my <a target="_blank" href="http://thehigherkeys.com/">college a cappella group</a> from afar. I also consider myself a semi-professional <a target="_blank" href="https://www.stardewvalley.net/">Stardew Valley</a> player, and like to spend my free time attempting to break the game by min/max-ing as much as humanly possible. &#127922;</p>
         </div>
       </section>
-      <section id="education">
+      <section class="overlay">
         <div id="education-container">
-          <h2 id="education-header"><span>Education</span></h2>
+          <h1 class="center-header"><span>Education</span></h1>
           <div id="brown-container">
             <div class="space-between">
-              <div id="bold-header">Brown University, Providence, RI</div>
+              <div class="bold-header">Brown University, Providence, RI</div>
               <div>September 2015 - May 2020</div>
             </div>
             <p>Sc.B. - Computer Science, Music</p>
@@ -123,11 +121,11 @@
         </div>
       </section>
       <section id="experience">
-        <div id="experience-center">
-          <h2 id="experience-header"><span>Experience</span></h2>
+        <div id="experience-container">
+          <h1 class="left-header"><span>Experience</span></h1>
           <div class="experience-box" style="border-color: #afbacf;">
             <div class="space-between">
-              <div id="bold-header">Associate Security Consultant @ <a target="_blank" href="https://www.netspi.com/">NetSPI</a></div>
+              <div class="bold-header">Associate Security Consultant @ <a target="_blank" href="https://www.netspi.com/">NetSPI</a></div>
               <div>Spring 2021</div>
             </div>
             <div class="location-marker">
@@ -139,7 +137,7 @@
           </div>
           <div class="experience-box" style="border-color: #8f9ebc;">
             <div class="space-between">
-              <div id="bold-header">Head Teaching Assistant @ <a target="_blank" href="https://www.brown.edu/">Brown University</a></div>
+              <div class="bold-header">Head Teaching Assistant @ <a target="_blank" href="https://cs.brown.edu/">Brown CS</a></div>
               <div>Fall 2019 - Spring 2020</div>
             </div>
             <div class="location-marker">
@@ -154,7 +152,7 @@
           </div>
           <div class="experience-box" style="border-color: #7083a9;">
             <div class="space-between">
-              <div id="bold-header">Information Security Intern @ <a target="_blank" href="https://www.qorvo.com/">Qorvo</a></div>
+              <div class="bold-header">Information Security Intern @ <a target="_blank" href="https://www.qorvo.com/">Qorvo</a></div>
               <div>Summer 2019</div>
             </div>
             <div class="location-marker">
@@ -163,12 +161,12 @@
             <ul>
               <li>Collaborated with the IT Security team to automate phishing response procedures, facilitate network threat investigation, and engage with users across the company</li>
               <li>Gained experience in analyzing potential phishing emails using a variety of different techniques and resources, along with reaching out to users for next steps in remediation</li>
-              <li>Developed several Python scripts to assist with the team's daily operations and increase automation of certain day-to-day tasks
+              <li>Developed several Python scripts to assist with the team's day-to-day operations
             </ul>
           </div>
           <div class="experience-box" style="border-color: #56698f;">
             <div class="space-between">
-              <div id="bold-header">Software Engineering Intern @ <a target="_blank" href="https://www.qorvo.com/">Qorvo</a></div>
+              <div class="bold-header">Software Engineering Intern @ <a target="_blank" href="https://www.qorvo.com/">Qorvo</a></div>
               <div>Summer 2017, Summer 2018</div>
             </div>
             <div class="location-marker">
@@ -182,7 +180,7 @@
           </div>
         </div>
       </section>
-      <div id="footer" class="space-between">
+      <div class="footer overlay space-between">
         <div class="icons">
           <a target="_blank" href="mailto:olivia.s.langley@gmail.com" class="footer-link"><i class="fas fa-envelope" style="margin: 2px;"></i></a>
           <a target="_blank" href="https://www.linkedin.com/in/oliviaslangley/" class="footer-link"><i class="fab fa-linkedin-in" style="margin: 2px;"></i></a>
