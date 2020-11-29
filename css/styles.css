@@ -11,7 +11,8 @@ body {
   font-family: "Assistant", Helvetica, sans-serif;
   font-size: 12pt;
   font-weight: 400;
-  background-color: white;
+  color: white;
+  background-color: #121212;
 }
 
 section {
@@ -48,8 +49,8 @@ ul {
 
 .overlay {
   background: linear-gradient(
-    rgba(116, 67, 62, 0.22), 
-    rgba(116, 67, 62, 0.22)
+    rgba(0, 0, 0, 0.85), 
+    rgba(0, 0, 0, 0.85)
   ), no-repeat center fixed url(../images/texture.jpg);
   background-size: cover;
 }
@@ -61,10 +62,10 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.15);  
+  background-color: rgba(0, 0, 0, 0.15);  
   backdrop-filter: blur(3px);
   border-radius: 10px;
-  box-shadow: 3px 3px 5px gray;
+  box-shadow: 3px 3px 5px black;
 }
 
 #home-text {
@@ -77,7 +78,7 @@ ul {
   font-family: "Zilla Slab", "Assistant", Helvetica, sans-serif;
   font-size: 22pt;
   font-weight: 300;
-  background: white;
+  background: black;
   border-radius: 15px;
   width: 280px;
   padding: 5px 10px 5px 15px;
@@ -93,7 +94,7 @@ ul {
   width: 0;
   height: 0;
   border: 20px solid transparent;
-  border-right-color: white;
+  border-right-color: black;
   border-left: 0;
   border-bottom: 0;
   margin-top: -11px;
@@ -102,7 +103,7 @@ ul {
 
 .icon, .icon:visited, .icon:active, .icon:focus {
   text-decoration: none;
-  color: #333;
+  color: white;
 }
 
 .icon:hover {
@@ -215,7 +216,7 @@ ul {
 
 #education-container {
   width: 800px;
-  background-color: white;
+  background-color: #121212;
   padding: 10px 40px 30px 40px;
 }
 
@@ -293,7 +294,6 @@ ul {
 }
 
 .location-marker {
-  color: #333;
   margin-bottom: 5px;
   font-style: italic;
 }
