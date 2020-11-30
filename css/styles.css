@@ -4,7 +4,6 @@ html, body {
   margin: 0 !important;
   padding: 0;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body {
@@ -12,7 +11,7 @@ body {
   font-size: 12pt;
   font-weight: 400;
   color: #e6e6e6;
-  background-color: #121212;
+  background-color: #1a1a1a;
 }
 
 section {
@@ -33,14 +32,15 @@ section {
 
 a, a:hover, a:visited, a:focus {
   font-weight: 700;
-  color: #b30000;
+  color: #800000;
 }
 
 h1 {
   font-family: "Zilla Slab", Helvetica, sans-serif;
-  margin-bottom: 22px;
-  font-size: 18pt;
   font-weight: 600;
+  font-style: italic;
+  margin-bottom: 22px;
+  font-size: 18pt; 
 }
 
 ul {
@@ -49,23 +49,25 @@ ul {
 
 .overlay {
   background: linear-gradient(
-    rgba(0, 0, 0, 0.85), 
-    rgba(0, 0, 0, 0.85)
-  ), no-repeat center fixed url(../images/texture.jpg);
+    rgba(0, 0, 0, 0.9), 
+    rgba(0, 0, 0, 0.9)
+  ), no-repeat center fixed url(../images/texture2.jpg);
   background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
 }
 
 #home-container {
   width: 650px;
-  padding-left: 35px;
-  padding-right: 40px;
+  padding: 0 40px 0 35px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.15);  
+  background-color: rgba(64, 64, 64, 0.15);  
   backdrop-filter: blur(3px);
   border-radius: 10px;
-  box-shadow: 3px 3px 5px black;
+  box-shadow: 3px 3px 5px #121212;
 }
 
 #home-text {
@@ -74,10 +76,18 @@ ul {
   margin-top: 8px;
 }
 
+.space-between {
+  position: relative;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
 #speech-bubble {
   font-family: "Zilla Slab", "Assistant", Helvetica, sans-serif;
-  font-size: 22pt;
+  font-style: italic;
   font-weight: 300;
+  font-size: 22pt;
   background: #333333;
   border-radius: 15px;
   width: 280px;
@@ -97,13 +107,12 @@ ul {
   border-right-color: #333333;
   border-left: 0;
   border-bottom: 0;
-  margin-top: -11px;
-  margin-left: -19px;
+  margin: -11px 0 0 -19px;
 }
 
 .icon, .icon:visited, .icon:active, .icon:focus {
   text-decoration: none;
-  color: white;
+  color: #e6e6e6;
 }
 
 .icon:hover {
@@ -187,24 +196,31 @@ ul {
   width: 800px;
 }
 
-.left-header {
+.header {
   z-index: 1;
   overflow: hidden;
- }
+}
 
-.left-header > span{
+.header > span {
   position: relative;
   display: inline-block;
 }
 
-.left-header > span:after{
+.header > span:after, .header > span:before {
   content: '';
   position: absolute;
   top: 49%;
   border-bottom: 1px solid #333;
   width: 2000%;
-  margin-left: 10px;
+  margin: 0 10px;
+}
+
+.header > span:after {
   left: 100%;
+}
+
+.header > span:before {
+  right: 100%;
 }
 
 #portrait {
@@ -216,43 +232,12 @@ ul {
 
 #education-container {
   width: 800px;
-  background-color: #121212;
+  background-color: #1a1a1a;
   padding: 10px 40px 30px 40px;
 }
 
 .center-header {
-  z-index: 1;
-  overflow: hidden;
   text-align: center;
-}
-
-.center-header > span{
-  position: relative;
-  display: inline-block;
-}
-
-.center-header > span:before, .center-header > span:after{
-  content: '';
-  position: absolute;
-  top: 49%;
-  border-bottom: 1px solid #333;
-  width: 1000%;
-  margin: 0 10px;
-}
-
-.center-header > span:before{
-  right: 100%;
-}
-
-.center-header > span:after{
-  left: 100%;
-}
-
-.space-between {
-  position: relative;
-  display: flex;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
 }
 
 .bold-header {
@@ -263,21 +248,23 @@ ul {
 .skill-row {
   display: flex;
   flex-wrap: wrap;
+  color: white;
+  margin-top: -5px;
 }
 
-.skill-box, .skill-box:visited, .skill-box:active, .skill-box:focus {
+a.skill-box, .skill-box:visited, .skill-box:active, .skill-box:focus {
   font-size: 11pt;
   color: white;
-  background-color: #7083a9;
+  background-color: #660000;
   padding: 0 4px;
   margin-right: 7px;
+  margin-top: 5px;
   font-weight: normal;
   text-decoration: none;
-  line-height: 1.5;
 }
 
-.skill-box:hover {
-  background-color: #56698f;
+a.skill-box:hover {
+  background-color: #4d0000;
   text-decoration: none;
   font-weight: normal;
 }
