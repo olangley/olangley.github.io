@@ -3,7 +3,7 @@ html, body {
   width: 100%;
   margin: 0 !important;
   padding: 0;
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
   overflow-x: hidden;
 }
 
@@ -38,9 +38,10 @@ a, a:hover, a:visited, a:focus {
 
 h1 {
   font-family: "Zilla Slab", Helvetica, sans-serif;
-  margin-bottom: 22px;
-  font-size: 18pt;
   font-weight: 600;
+  font-style: italic;
+  margin-bottom: 22px;
+  font-size: 18pt; 
 }
 
 ul {
@@ -82,8 +83,9 @@ ul {
 
 #speech-bubble {
   font-family: "Zilla Slab", "Assistant", Helvetica, sans-serif;
-  font-size: 22pt;
+  font-style: italic;
   font-weight: 300;
+  font-size: 22pt;
   background: white;
   border-radius: 15px;
   width: 280px;
