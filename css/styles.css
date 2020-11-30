@@ -52,10 +52,10 @@ ul {
     rgba(116, 67, 62, 0.22), 
     rgba(116, 67, 62, 0.22)
   ), no-repeat center fixed url(../images/texture.jpg);
-  background-size: cover;
-  -o-background-size: cover;
-  -moz-background-size: cover;
   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #home-container {
@@ -299,7 +299,13 @@ a.skill-box:hover {
 
 @media screen and (max-width: 500px) and (orientation: portrait) {
   .overlay {
-    background-position: scroll;
+    background: linear-gradient(
+      rgba(116, 67, 62, 0.22), 
+      rgba(116, 67, 62, 0.22)
+    ), no-repeat center center scroll url(../images/texture.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
   }
 
@@ -315,7 +321,7 @@ a.skill-box:hover {
   }
 
   #sketch {
-    height: 250px;
+    height: 200px;
     width: auto;
     margin: 0;
   }
