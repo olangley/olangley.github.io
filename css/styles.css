@@ -11,6 +11,7 @@ body {
   font-family: "Assistant", Helvetica, sans-serif;
   font-size: 12pt;
   font-weight: 400;
+  color: #333;
   background-color: white;
 }
 
@@ -191,24 +192,31 @@ ul {
   width: 800px;
 }
 
-.left-header {
+.header {
   z-index: 1;
   overflow: hidden;
- }
+}
 
-.left-header > span{
+.header > span {
   position: relative;
   display: inline-block;
 }
 
-.left-header > span:after{
+.header > span:after, .header > span:before {
   content: '';
   position: absolute;
   top: 49%;
   border-bottom: 1px solid #333;
   width: 2000%;
-  margin-left: 10px;
+  margin: 0 10px;
+}
+
+.header > span:after {
   left: 100%;
+}
+
+.header > span:before {
+  right: 100%;
 }
 
 #portrait {
@@ -225,31 +233,7 @@ ul {
 }
 
 .center-header {
-  z-index: 1;
-  overflow: hidden;
   text-align: center;
-}
-
-.center-header > span{
-  position: relative;
-  display: inline-block;
-}
-
-.center-header > span:before, .center-header > span:after{
-  content: '';
-  position: absolute;
-  top: 49%;
-  border-bottom: 1px solid #333;
-  width: 1000%;
-  margin: 0 10px;
-}
-
-.center-header > span:before{
-  right: 100%;
-}
-
-.center-header > span:after{
-  left: 100%;
 }
 
 .bold-header {
@@ -260,12 +244,13 @@ ul {
 .skill-row {
   display: flex;
   flex-wrap: wrap;
+  font-size: 13pt;
 }
 
 .skill-box, .skill-box:visited, .skill-box:active, .skill-box:focus {
   font-size: 11pt;
   color: white;
-  background-color: #7083a9;
+  background-color: #60759f;
   padding: 0 4px;
   margin-right: 7px;
   font-weight: normal;
@@ -274,9 +259,10 @@ ul {
 }
 
 .skill-box:hover {
-  background-color: #56698f;
+  background-color: #435270;
   text-decoration: none;
   font-weight: normal;
+  font-size: 13pt;
 }
 
 #experience-container {
@@ -291,7 +277,6 @@ ul {
 }
 
 .location-marker {
-  color: #333;
   margin-bottom: 5px;
   font-style: italic;
 }
@@ -301,7 +286,6 @@ ul {
 }
 
 .footer {
-  color: #333;
   padding: 15px 20px 15px 20px;
 }
 
