@@ -250,6 +250,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   color: white;
+  margin-top: -5px;
 }
 
 a.skill-box, .skill-box:visited, .skill-box:active, .skill-box:focus {
@@ -258,9 +259,9 @@ a.skill-box, .skill-box:visited, .skill-box:active, .skill-box:focus {
   background-color: #60759f;
   padding: 0 4px;
   margin-right: 7px;
+  margin-top: 5px;
   font-weight: normal;
   text-decoration: none;
-  line-height: 1.5;
 }
 
 a.skill-box:hover {
