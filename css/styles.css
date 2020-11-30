@@ -259,6 +259,7 @@ ul {
 
 .skill-box:hover {
   background-color: #435270;
+  color: white;
   text-decoration: none;
   font-weight: normal;
 }
