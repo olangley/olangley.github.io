@@ -244,7 +244,6 @@ ul {
 .skill-row {
   display: flex;
   flex-wrap: wrap;
-  font-size: 13pt;
 }
 
 .skill-box, .skill-box:visited, .skill-box:active, .skill-box:focus {
@@ -262,7 +261,6 @@ ul {
   background-color: #435270;
   text-decoration: none;
   font-weight: normal;
-  font-size: 13pt;
 }
 
 #experience-container {
