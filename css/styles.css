@@ -244,9 +244,10 @@ ul {
 .skill-row {
   display: flex;
   flex-wrap: wrap;
+  color: white;
 }
 
-.skill-box, .skill-box:visited, .skill-box:active, .skill-box:focus {
+a.skill-box, .skill-box:visited, .skill-box:active, .skill-box:focus {
   font-size: 11pt;
   color: white;
   background-color: #60759f;
@@ -257,9 +258,8 @@ ul {
   line-height: 1.5;
 }
 
-.skill-box:hover {
+a.skill-box:hover {
   background-color: #435270;
-  color: white;
   text-decoration: none;
   font-weight: normal;
 }
