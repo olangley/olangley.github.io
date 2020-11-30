@@ -3,7 +3,7 @@ html, body {
   width: 100%;
   margin: 0 !important;
   padding: 0;
-  scroll-behavior: auto;
+  scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
@@ -52,8 +52,11 @@ ul {
   background: linear-gradient(
     rgba(116, 67, 62, 0.22), 
     rgba(116, 67, 62, 0.22)
-  ), no-repeat center fixed url(../images/texture.jpg);
+  ), no-repeat center fixed url(../images/texture.png);
   background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
 }
 
 #home-container {
