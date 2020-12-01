@@ -49,8 +49,8 @@ ul {
 
 .overlay {
   background: linear-gradient(
-    rgba(0, 0, 0, 0.82), 
-    rgba(0, 0, 0, 0.82)
+    rgba(0, 0, 0, 0.78), 
+    rgba(0, 0, 0, 0.78)
   ), no-repeat center fixed url(../images/texture3.jpg);
   background-size: cover;
   -o-background-size: cover;
@@ -65,10 +65,9 @@ ul {
   justify-content: center;
   align-items: center;
   background-color: rgba(64, 64, 64, 0.15);  
-  backdrop-filter: saturate(180%) blur(7px);
-  webkit-backdrop-filter: saturate(180%) blur(7px);
+  backdrop-filter: saturate(180%) blur(5px);
+  webkit-backdrop-filter: saturate(180%) blur(5px);
   border-radius: 10px;
-  box-shadow: 3px 3px 5px #121212;
 }
 
 #home-text {
@@ -234,8 +233,8 @@ ul {
 #education-container {
   width: 800px;
   background-color: rgba(64, 64, 64, 0.15);  
-  backdrop-filter: saturate(180%) blur(7px);
-  webkit-backdrop-filter: saturate(180%) blur(7px);
+  backdrop-filter: saturate(180%) blur(5px);
+  webkit-backdrop-filter: saturate(180%) blur(5px);
   padding: 10px 40px 30px 40px;
 }
 
