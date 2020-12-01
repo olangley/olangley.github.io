@@ -1,6 +1,6 @@
 #preloader-container {
   /*background: #f4f0f0;*/
-  background-color: #fbfaf9;
+  background-color: black;
   position: fixed;
   top: 0;
   left: 0;
@@ -32,7 +32,7 @@
     bottom: 5px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top-color: #b89694;
+    border-top-color: #e6e6e6;
     -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
     animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
 }
