@@ -32,7 +32,7 @@ section {
 
 a, a:hover, a:visited, a:focus {
   font-weight: 700;
-  color: #800000;
+  color: #2aa22a;
 }
 
 h1 {
@@ -210,7 +210,7 @@ ul {
   content: '';
   position: absolute;
   top: 49%;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #e6e6e6;
   width: 2000%;
   margin: 0 10px;
 }
@@ -255,7 +255,7 @@ ul {
 a.skill-box, .skill-box:visited, .skill-box:active, .skill-box:focus {
   font-size: 11pt;
   color: white;
-  background-color: #660000;
+  background-color: #258e25;
   padding: 0 4px;
   margin-right: 7px;
   margin-top: 5px;
@@ -264,7 +264,7 @@ a.skill-box, .skill-box:visited, .skill-box:active, .skill-box:focus {
 }
 
 a.skill-box:hover {
-  background-color: #4d0000;
+  background-color: #1a651a;
   text-decoration: none;
   font-weight: normal;
 }
