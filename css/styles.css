@@ -1,7 +1,7 @@
 html, body {
   height: 100%;
   width: 100%;
-  margin: 0 !important;
+  margin: 0;
   padding: 0;
   scroll-behavior: smooth;
 }
@@ -30,13 +30,18 @@ section {
   transition: all 1.2s;
 }
 
-a, a:hover, a:visited, a:focus {
+a, a:visited, a:active, a:focus {
   font-weight: 700;
+  text-decoration: none;
   color: #990000;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 h1 {
-  font-family: "Zilla Slab", Helvetica, sans-serif;
+  font-family: "Zilla Slab", "Assistant", Helvetica, sans-serif;
   font-weight: 600;
   font-style: italic;
   margin-bottom: 22px;
@@ -131,10 +136,7 @@ ul {
 
 #sketch {
   height: 280px;
-  width: auto;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  margin-right: 25px;
+  margin: 20px 25px 30px 0;
 }
 
 #sketch-copyright {
@@ -157,6 +159,11 @@ ul {
   text-align: center;
   -webkit-animation: bounce 1s linear infinite;
   animation: bounce 1s linear infinite;
+}
+
+#arrow {
+  color: #333;
+  font-size: 35px;
 }
 
 @-webkit-keyframes bounce {
@@ -187,17 +194,12 @@ ul {
   }
 }
 
-#arrow {
-  color: #333;
-  font-size: 35px;
-}
-
-#about-container {
+.section-container {
   width: 800px;
+  margin: 40px 60px;
 }
 
 .header {
-  z-index: 1;
   overflow: hidden;
 }
 
@@ -226,12 +228,10 @@ ul {
 #portrait {
   float: right;
   height: 200px;
-  width: auto;
   margin: 0 10px 30px 40px;
 }
 
 #education-container {
-  width: 800px;
   background-color: white;
   padding: 10px 40px 30px 40px;
 }
@@ -248,17 +248,15 @@ ul {
 .skill-row {
   display: flex;
   flex-wrap: wrap;
-  color: white;
   margin-top: -5px;
 }
 
-a.skill-box, .skill-box:visited, .skill-box:active, .skill-box:focus {
+a.skill-box, a.skill-box:visited, a.skill-box:active, a.skill-box:focus {
   font-size: 11pt;
   color: white;
   background-color: #60759f;
   padding: 0 4px;
-  margin-right: 7px;
-  margin-top: 5px;
+  margin: 5px 7px 0 0;
   font-weight: normal;
   text-decoration: none;
 }
@@ -267,11 +265,6 @@ a.skill-box:hover {
   background-color: #435270;
   text-decoration: none;
   font-weight: normal;
-}
-
-#experience-container {
-  width: 800px;
-  margin: 40px 0;
 }
 
 .experience-box {
@@ -297,16 +290,9 @@ a.skill-box:hover {
   margin: 2px;
 }
 
-@media screen and (max-width: 500px) and (orientation: portrait) {
+@media screen and (max-width: 600px) and (orientation: portrait) {
   .overlay {
-    background: linear-gradient(
-      rgba(116, 67, 62, 0.22), 
-      rgba(116, 67, 62, 0.22)
-    ), no-repeat center center scroll url(../images/texture.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background-position: scroll;
   }
 
   #home-container {
@@ -357,7 +343,7 @@ a.skill-box:hover {
 
   #education-container {
     margin: 20px;
-    padding: 0 20px 15px 20px;
+    padding: 0 20px 20px 20px;
   }
 
   #experience-container {
@@ -366,6 +352,10 @@ a.skill-box:hover {
 
   .experience-box {
     padding-left: 12px;
+  }
+
+  .bold-header {
+    font-size: 12pt;
   }
 }
 
@@ -389,7 +379,7 @@ a.skill-box:hover {
   }
 
   #sketch {
-    height: 200px;
+    height: 170px;
     width: auto;
     margin: 0;
   }
@@ -400,5 +390,97 @@ a.skill-box:hover {
 
   .bold-header {
     font-size: 11pt;
+  }
+}
+
+@media screen and (max-width: 850px) and (orientation: landscape) {
+  body {
+    font-size: 11pt;
+  }
+
+  .overlay {
+    background-position: scroll;
+  }
+
+  #home-container {
+    width: 560px;
+  }
+
+  #speech-bubble {
+    font-size: 20pt;
+    width: 255px;
+    padding: 4px 10px 4px 15px;
+  }
+
+  #sketch {
+    height: 250px;
+    width: auto;
+  }
+
+  #arrow-wrapper {
+    display: none;
+  }
+
+  .bold-header {
+    font-size: 11pt;
+  }
+}
+
+@media screen and (max-width: 600px) and (orientation: landscape) {
+  #home-container {
+    width: 450px;
+    font-size: 9pt;
+  }
+
+  #home-text {
+    height: 150px;
+    margin-top: 0;
+  }
+
+  .home-icon {
+    font-size: 14pt;
+  }
+
+  #speech-bubble {
+    font-size: 16pt;
+    background: transparent;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  #speech-bubble:after {
+    display: none;
+  }
+
+  #sketch {
+    height: 160px;
+    width: auto;
+    margin-right: 20px;
+  }
+
+  #sketch-copyright {
+    font-size: 8pt;
+    left: 2px;
+  }
+
+  #arrow-wrapper {
+    display: none;
+  }
+
+  #about-container {
+    margin: 15px 25px 25px 25px;
+  }
+
+  #education-container {
+    margin: 20px;
+    padding: 0 20px 20px 20px;
+  }
+
+  #experience-container {
+    margin: 10px 25px 25px 25px;
+  }
+
+  .experience-box {
+    padding-left: 12px;
   }
 }

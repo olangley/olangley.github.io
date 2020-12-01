@@ -28,11 +28,12 @@
 
 @media (max-width: 767px) {
     .navbar {
-        min-height: 15vw;
+        display: none;
     }
+}
 
-    .navbar .navbar-nav > li > a {
-        line-height: 8vw;
-        font-size: 3.5vw;
+@media (max-width: 850px) and (orientation: landscape) {
+    .navbar {
+        display: none;
     }
 }
