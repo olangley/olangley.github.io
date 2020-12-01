@@ -54,8 +54,8 @@ ul {
 
 .overlay {
   background: linear-gradient(
-    rgba(116, 67, 62, 0.22), 
-    rgba(116, 67, 62, 0.22)
+    rgba(116, 67, 62, 0.23), 
+    rgba(116, 67, 62, 0.23)
   ), no-repeat center fixed url(../images/texture.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -246,6 +246,10 @@ ul {
   font-weight: 700;
 }
 
+.date {
+  text-align: right;
+}
+
 .skill-row {
   display: flex;
   flex-wrap: wrap;
@@ -259,7 +263,6 @@ a.skill-box, a.skill-box:visited, a.skill-box:active, a.skill-box:focus {
   padding: 0 4px;
   margin: 5px 7px 0 0;
   font-weight: normal;
-  text-decoration: none;
 }
 
 a.skill-box:hover {
@@ -272,6 +275,12 @@ a.skill-box:hover {
   margin-bottom: 20px;
   padding-left: 20px;
   border-left: 5pt solid;
+}
+
+.flex-space {
+  display: flex;
+  flex: 1 0 10%;
+  flex-flow: row nowrap;
 }
 
 .location-marker {
@@ -291,13 +300,17 @@ a.skill-box:hover {
   margin: 2px;
 }
 
-@media screen and (max-width: 600px) and (orientation: portrait) {
+@media screen and (max-width: 650px) and (orientation: portrait) {
+  h1 {
+    font-size: 16pt;
+  }
+
   .overlay {
     background-position: scroll;
   }
 
   #home-container {
-    width: 315px;
+    width: 310px;
     padding: 20px 30px 25px 30px;
     flex-direction: column;
   }
@@ -309,7 +322,6 @@ a.skill-box:hover {
 
   #sketch {
     height: 200px;
-    width: auto;
     margin: 0;
   }
 
@@ -332,23 +344,28 @@ a.skill-box:hover {
     display: none;
   }
 
-  #about-container {
-    margin: 15px 25px 25px 25px;
+  .bold-header {
+    font-size: 12pt;
+  }
+}
+
+@media screen and (max-width: 500px) and (orientation: portrait) {
+  body {
+    font-size: 11pt;
+  }
+
+  .section-container {
+    margin: 20px 25px 25px 25px;
   }
 
   #portrait {
     height: 120px;
-    width: auto;
     margin-left: 20px;
   }
 
   #education-container {
     margin: 20px;
     padding: 0 20px 20px 20px;
-  }
-
-  #experience-container {
-    margin: 10px 25px 25px 25px;
   }
 
   .experience-box {
@@ -360,29 +377,22 @@ a.skill-box:hover {
   }
 }
 
-@media screen and (max-width: 320px) and (orientation: portrait) {
+@media screen and (max-width: 340px) and (orientation: portrait) {
   body {
     font-size: 11pt;
   }
-
-  h1 {
-    font-size: 16pt;
-  }
-
+  
   #home-container {
-    width: 290px;
-    padding: 20px 30px 25px 30px;
-    flex-direction: column;
+    width: 280px;
+    padding: 20px 20px 20px 20px;
   }
 
   #home-text {
-    height: 200px;
+    height: 190px;
   }
 
   #sketch {
     height: 170px;
-    width: auto;
-    margin: 0;
   }
 
   #speech-bubble {
@@ -394,7 +404,7 @@ a.skill-box:hover {
   }
 }
 
-@media screen and (max-width: 850px) and (orientation: landscape) {
+@media screen and (max-height: 500px) and (orientation: landscape) {
   body {
     font-size: 11pt;
   }
@@ -415,7 +425,6 @@ a.skill-box:hover {
 
   #sketch {
     height: 250px;
-    width: auto;
   }
 
   #arrow-wrapper {
@@ -427,7 +436,7 @@ a.skill-box:hover {
   }
 }
 
-@media screen and (max-width: 600px) and (orientation: landscape) {
+@media screen and (max-height: 350px) and (orientation: landscape) {
   #home-container {
     width: 450px;
     font-size: 9pt;
@@ -468,17 +477,13 @@ a.skill-box:hover {
     display: none;
   }
 
-  #about-container {
-    margin: 15px 25px 25px 25px;
+  .section-container {
+    margin: 20px 30px 25px 30px;
   }
 
   #education-container {
     margin: 20px;
-    padding: 0 20px 20px 20px;
-  }
-
-  #experience-container {
-    margin: 10px 25px 25px 25px;
+    padding: 0 25px 20px 25px;
   }
 
   .experience-box {
