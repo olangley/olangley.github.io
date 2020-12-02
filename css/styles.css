@@ -10,8 +10,8 @@ body {
   font-family: "Assistant", Helvetica, sans-serif;
   font-size: 12pt;
   font-weight: 400;
-  color: #e6e6e6;
-  background-color: #0f1113;
+  color: black;
+  background-color: #f2f2f2;
 }
 
 section {
@@ -32,7 +32,7 @@ section {
 
 a, a:hover, a:visited, a:focus {
   font-weight: 700;
-  color: #b31919;
+  color: #990000;
 }
 
 h1 {
@@ -59,6 +59,7 @@ ul {
 }
 
 #home-container {
+  color: #e6e6e6;
   width: 650px;
   padding: 0 40px 0 35px;
   display: flex;
@@ -77,6 +78,10 @@ ul {
   margin-top: 8px;
 }
 
+.home-link, .home-link:hover, .home-link:visited, .home-link:focus {
+  color: #b31919;
+}
+
 .space-between {
   position: relative;
   display: flex;
@@ -89,7 +94,7 @@ ul {
   font-style: italic;
   font-weight: 300;
   font-size: 22pt;
-  background: #60759f;
+  background: #4d80b3;
   border-radius: 15px;
   width: 280px;
   padding: 5px 10px 5px 15px;
@@ -105,7 +110,7 @@ ul {
   width: 0;
   height: 0;
   border: 20px solid transparent;
-  border-right-color: #60759f;
+  border-right-color: #4d80b3;
   border-left: 0;
   border-bottom: 0;
   margin: -11px 0 0 -19px;
@@ -195,6 +200,7 @@ ul {
 
 #about-container {
   width: 800px;
+  color: black;
 }
 
 .header {
@@ -211,7 +217,7 @@ ul {
   content: '';
   position: absolute;
   top: 49%;
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid black;
   width: 2000%;
   margin: 0 10px;
 }
@@ -231,11 +237,20 @@ ul {
   margin: 0 10px 30px 40px;
 }
 
+#education {
+  background: linear-gradient(
+    rgba(51, 51, 51, 0.75), 
+    rgba(51, 51, 51, 0.75)
+  ), no-repeat center fixed url(../images/texture2.jpg);
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+
 #education-container {
   width: 800px;
-  background-color: rgba(73, 88, 105, 0.15);  
-  backdrop-filter: saturate(200%) blur(5px);
-  webkit-backdrop-filter: saturate(200%) blur(5px);
+  background-color: #f2f2f2;
   padding: 10px 40px 30px 40px;
 }
 
@@ -258,8 +273,8 @@ ul {
 a.skill-box, .skill-box:visited, .skill-box:active, .skill-box:focus {
   font-size: 11pt;
   color: white;
-  background-color: #9c1616;
-  padding: 1px 5px;
+  background-color: #4d80b3;
+  padding: 2px 5px;
   margin-right: 5.8px;
   margin-top: 5px;
   font-weight: normal;
@@ -267,7 +282,7 @@ a.skill-box, .skill-box:visited, .skill-box:active, .skill-box:focus {
 }
 
 a.skill-box:hover {
-  background-color: #701010;
+  background-color: #36597d;
   text-decoration: none;
   font-weight: normal;
 }
@@ -294,6 +309,7 @@ a.skill-box:hover {
 
 .footer {
   padding: 15px 20px 15px 20px;
+  color: #e6e6e6;
 }
 
 .footer-icon {
