@@ -1,7 +1,7 @@
 html, body {
   height: 100%;
   width: 100%;
-  margin: 0 !important;
+  margin: 0;
   padding: 0;
   scroll-behavior: smooth;
 }
@@ -11,7 +11,7 @@ body {
   font-size: 12pt;
   font-weight: 400;
   color: black;
-  background-color: #f2f2f2;
+  background-color: black;
 }
 
 section {
@@ -30,13 +30,18 @@ section {
   transition: all 1.2s;
 }
 
-a, a:hover, a:visited, a:focus {
+a, a:visited, a:active, a:focus {
   font-weight: 700;
+  text-decoration: none;
   color: #990000;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 h1 {
-  font-family: "Zilla Slab", Helvetica, sans-serif;
+  font-family: "Zilla Slab", "Assistant", Helvetica, sans-serif;
   font-weight: 600;
   font-style: italic;
   margin-bottom: 22px;
@@ -59,17 +64,15 @@ ul {
 }
 
 #home-container {
-  color: #e6e6e6;
+  color: #f2f2f2;
   width: 650px;
   padding: 0 40px 0 35px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(73, 88, 105, 0.15);  
-  backdrop-filter: saturate(200%) blur(5px);
-  webkit-backdrop-filter: saturate(200%) blur(5px);
-  border-radius: 10px;
-  box-shadow: 3px 3px 5px #0d0d0d;
+  background-color: rgba(115, 115, 115, 0.15);  
+  backdrop-filter: saturate(150%) blur(5px);
+  -webkit-backdrop-filter: saturate(150%) blur(5px);
 }
 
 #home-text {
@@ -78,7 +81,7 @@ ul {
   margin-top: 8px;
 }
 
-.home-link, .home-link:hover, .home-link:visited, .home-link:focus {
+a.home-link {
   color: #b31919;
 }
 
@@ -118,7 +121,7 @@ ul {
 
 .icon, .icon:visited, .icon:active, .icon:focus {
   text-decoration: none;
-  color: #e6e6e6;
+  color: #f2f2f2;
 }
 
 .icon:hover {
@@ -137,10 +140,7 @@ ul {
 
 #sketch {
   height: 280px;
-  width: auto;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  margin-right: 25px;
+  margin: 20px 25px 30px 0;
 }
 
 #sketch-copyright {
@@ -163,6 +163,11 @@ ul {
   text-align: center;
   -webkit-animation: bounce 1s linear infinite;
   animation: bounce 1s linear infinite;
+}
+
+#arrow {
+  color: #f2f2f2;
+  font-size: 35px;
 }
 
 @-webkit-keyframes bounce {
@@ -193,18 +198,22 @@ ul {
   }
 }
 
-#arrow {
-  color: #e6e6e6;
-  font-size: 35px;
+#about {
+  background-color: #f2f2f2;
+}
+
+.section-container {
+  width: 800px;
+  margin: 40px 60px;
 }
 
 #about-container {
-  width: 800px;
   color: black;
+  padding: 15px 40px 25px 40px;
+  border: 2pt solid black;
 }
 
 .header {
-  z-index: 1;
   overflow: hidden;
 }
 
@@ -233,14 +242,13 @@ ul {
 #portrait {
   float: right;
   height: 200px;
-  width: auto;
   margin: 0 10px 30px 40px;
 }
 
 #education {
   background: linear-gradient(
-    rgba(51, 51, 51, 0.75), 
-    rgba(51, 51, 51, 0.75)
+    rgba(51, 51, 51, 0.77), 
+    rgba(51, 51, 51, 0.77)
   ), no-repeat center fixed url(../images/texture2.jpg);
   background-size: cover;
   -o-background-size: cover;
@@ -249,7 +257,6 @@ ul {
 }
 
 #education-container {
-  width: 800px;
   background-color: #f2f2f2;
   padding: 10px 40px 30px 40px;
 }
@@ -263,10 +270,13 @@ ul {
   font-weight: 700;
 }
 
+.date {
+  text-align: right;
+}
+
 .skill-row {
   display: flex;
   flex-wrap: wrap;
-  color: white;
   margin-top: -5px;
 }
 
@@ -275,10 +285,8 @@ a.skill-box, .skill-box:visited, .skill-box:active, .skill-box:focus {
   color: white;
   background-color: #4d80b3;
   padding: 2px 5px;
-  margin-right: 5.8px;
-  margin-top: 5px;
+  margin: 5px 7px 0 0;
   font-weight: normal;
-  text-decoration: none;
 }
 
 a.skill-box:hover {
@@ -287,15 +295,20 @@ a.skill-box:hover {
   font-weight: normal;
 }
 
-#experience-container {
-  width: 800px;
-  margin: 40px 0;
+#experience {
+  background-color: #f2f2f2;
 }
 
 .experience-box {
   margin-bottom: 20px;
   padding-left: 20px;
   border-left: 5pt solid;
+}
+
+.flex-space {
+  display: flex;
+  flex: 1 0 10%;
+  flex-flow: row nowrap;
 }
 
 .location-marker {
@@ -309,16 +322,24 @@ a.skill-box:hover {
 
 .footer {
   padding: 15px 20px 15px 20px;
-  color: #e6e6e6;
+  color: #f2f2f2;
 }
 
 .footer-icon {
   margin: 2px;
 }
 
-@media screen and (max-width: 500px) and (orientation: portrait) {
+@media screen and (max-width: 650px) and (orientation: portrait) {
+  h1 {
+    font-size: 16pt;
+  }
+
+  .overlay {
+    background-position: scroll;
+  }
+
   #home-container {
-    width: 315px;
+    width: 310px;
     padding: 20px 30px 25px 30px;
     flex-direction: column;
   }
@@ -329,8 +350,7 @@ a.skill-box:hover {
   }
 
   #sketch {
-    height: 250px;
-    width: auto;
+    height: 200px;
     margin: 0;
   }
 
@@ -353,60 +373,156 @@ a.skill-box:hover {
     display: none;
   }
 
-  #about-container {
-    margin: 5px 25px 20px 25px;
+  .bold-header {
+    font-size: 12pt;
+  }
+}
+
+@media screen and (max-width: 500px) and (orientation: portrait) {
+  body {
+    font-size: 11pt;
   }
 
   #portrait {
     height: 120px;
-    width: auto;
     margin-left: 20px;
   }
 
+  #about-container {
+    margin: 40px 25px;
+    padding: 0 18px 5px 18px;
+  }
+
   #education-container {
-    margin: 20px;
-    padding: 0 20px 15px 20px;
+    margin: 40px 25px;
+    padding: 0 18px 20px 18px;
   }
 
   #experience-container {
-    margin: 5px 25px 20px 25px;
+    margin: 20px 25px;
   }
 
   .experience-box {
     padding-left: 12px;
   }
-}
 
-@media screen and (max-width: 320px) and (orientation: portrait) {
-  body {
+  .bold-header {
     font-size: 11pt;
   }
+}
 
-  h1 {
-    font-size: 16pt;
-  }
-
+@media screen and (max-width: 340px) and (orientation: portrait) {
   #home-container {
-    width: 290px;
-    padding: 20px 30px 25px 30px;
-    flex-direction: column;
-  }
-
-  #home-text {
-    height: 200px;
+    width: 280px;
+    padding: 20px 20px 20px 20px;
   }
 
   #sketch {
-    height: 200px;
-    width: auto;
-    margin: 0;
+    height: 170px;
   }
 
   #speech-bubble {
     font-size: 20pt;
   }
 
+  #about-container {
+    margin: 40px 20px;
+    padding: 0 15px 5px 15px;
+  }
+
+  #education-container {
+    margin: 40px 20px;
+    padding: 0 15px 15px 15px;
+  }
+
+  #experience-container {
+    margin: 20px;
+  }
+}
+
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  body {
+    font-size: 11pt;
+  }
+
+  .overlay {
+    background-position: scroll;
+  }
+
+  #home-container {
+    width: 560px;
+  }
+
+  #speech-bubble {
+    font-size: 20pt;
+    width: 255px;
+    padding: 4px 10px 4px 15px;
+  }
+
+  #sketch {
+    height: 250px;
+  }
+
+  #arrow-wrapper {
+    display: none;
+  }
+
   .bold-header {
     font-size: 11pt;
+  }
+}
+
+@media screen and (max-height: 350px) and (orientation: landscape) {
+  #home-container {
+    width: 450px;
+    font-size: 9pt;
+  }
+
+  #home-text {
+    height: 150px;
+    margin-top: 0;
+  }
+
+  .home-icon {
+    font-size: 14pt;
+  }
+
+  #speech-bubble {
+    font-size: 16pt;
+    background: transparent;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  #speech-bubble:after {
+    display: none;
+  }
+
+  #sketch {
+    height: 160px;
+    width: auto;
+    margin-right: 20px;
+  }
+
+  #sketch-copyright {
+    font-size: 8pt;
+    left: 2px;
+  }
+
+  #arrow-wrapper {
+    display: none;
+  }
+
+  .section-container {
+    margin: 20px 30px 25px 30px;
+  }
+
+  #education-container {
+    margin: 20px;
+    padding: 0 25px 20px 25px;
+  }
+
+  .experience-box {
+    padding-left: 12px;
   }
 }

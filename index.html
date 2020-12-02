@@ -4,10 +4,11 @@
         <title>Olivia Langley</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&family=Zilla+Slab:ital,wght@1,300;1,600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/navbar.css">
         <link rel="stylesheet" href="css/preloader.css">
-        <link rel="stylesheet" href="css/fonts.css">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -35,12 +36,12 @@
               </div>
           </div>
       </nav>
-      <section class="overlay">
+      <section id="home" class="overlay">
         <div id="home-container">
           <div id="sketch-container">
-            <img id="sketch" src="images/sketch3.png">
+            <img id="sketch" src="images/sketch.png">
             <div id="sketch-copyright">
-              &copy; <a target="_blank" href="https://ndsun.net/">Andy Sun</a>
+              &copy; <a target="_blank" href="https://ndsun.net/" class="home-link">Andy Sun</a>
             </div>
           </div>
           <div id="home-text" class="space-between">
@@ -64,7 +65,7 @@
         </a>
       </section>
       <section id="about">
-        <div id="about-container">
+        <div id="about-container" class="section-container">
           <h1 class="header"><span>About</span></h1>
           <div>
             <img id="portrait" src="images/portrait.png">
@@ -76,12 +77,12 @@
         </div>
       </section>
       <section id="education">
-        <div id="education-container">
+        <div id="education-container" class="section-container">
           <h1 class="header center-header"><span>Education</span></h1>
           <div id="brown-container">
             <div class="space-between">
               <div class="bold-header">Brown University, Providence, RI</div>
-              <div>September 2015 - May 2020</div>
+              <div class="date">September 2015 - May 2020</div>
             </div>
             <p>Sc.B. - Computer Science, Music</p>
             <p>Relevant Coursework:</p>
@@ -101,7 +102,7 @@
               <li>User Interfaces and User Experience</li>
             </ul>
             <p>Technical Skills:</p>
-            <div class="space-row">
+            <div class="skill-row">
               <a target="_blank" href="https://go.java/" class="skill-box">Java</a>
               <a target="_blank" href="https://www.python.org/" class="skill-box">Python</a>
               <a target="_blank" href="https://docs.microsoft.com/en-us/dotnet/csharp/" class="skill-box">C#</a>
@@ -121,12 +122,13 @@
         </div>
       </section>
       <section id="experience">
-        <div id="experience-container">
+        <div id="experience-container" class="section-container">
           <h1 class="header"><span>Experience</span></h1>
           <div class="experience-box" style="border-color: #82a6c9;">
             <div class="space-between">
               <div class="bold-header">Associate Security Consultant @ <a target="_blank" href="https://www.netspi.com/">NetSPI</a></div>
-              <div>Spring 2021</div>
+              <div class="flex-space"></div>
+              <div class="date">Spring 2021</div>
             </div>
             <div class="location-marker">
               <i class="fas fa-map-marker-alt"></i>Portland, OR
@@ -138,7 +140,8 @@
           <div class="experience-box" style="border-color: #5e8cba;">
             <div class="space-between">
               <div class="bold-header">Head Teaching Assistant @ <a target="_blank" href="https://cs.brown.edu/">Brown CS</a></div>
-              <div>Spring 2020</div>
+              <div class="flex-space"></div>
+              <div class="date">Spring 2020</div>
             </div>
             <div class="location-marker">
               <i class="fas fa-map-marker-alt"></i>Providence, RI
@@ -153,21 +156,23 @@
           <div class="experience-box" style="border-color: #4573a1;">
             <div class="space-between">
               <div class="bold-header">Information Security Intern @ <a target="_blank" href="https://www.qorvo.com/">Qorvo</a></div>
-              <div>Summer 2019</div>
+              <div class="flex-space"></div>
+              <div class="date">Summer 2019</div>
             </div>
             <div class="location-marker">
               <i class="fas fa-map-marker-alt"></i>Hillsboro, OR
             </div>
             <ul>
               <li>Collaborated with the IT Security team to automate phishing response procedures, facilitate network threat investigation, and engage with users across the company</li>
-              <li>Gained experience in analyzing potential phishing emails using a variety of different techniques and resources, along with reaching out to users for next steps in remediation</li>
+              <li>Gained experience in analyzing potential phishing emails using a variety of techniques and resources</li>
               <li>Developed several Python scripts to assist with the team's day-to-day operations
             </ul>
           </div>
-          <div class="experience-box" style="border-color: #2e4d6b;">
+          <div class="experience-box" style="border-color: #36597d;">
             <div class="space-between">
               <div class="bold-header">Software Engineering Intern @ <a target="_blank" href="https://www.qorvo.com/">Qorvo</a></div>
-              <div>Summer 2017, Summer 2018</div>
+              <div class="flex-space"></div>
+              <div class="date">Summer 2017, Summer 2018</div>
             </div>
             <div class="location-marker">
               <i class="fas fa-map-marker-alt"></i>Hillsboro, OR
@@ -186,7 +191,7 @@
           <a target="_blank" href="https://www.linkedin.com/in/oliviaslangley/" class="icon footer-icon"><i class="fab fa-linkedin-in"></i></a>
           <a target="_blank" href="https://github.com/olangley" class="icon footer-icon"><i class="fab fa-github"></i></a>
         </div>
-        <div class="copyright">&copy; 2020 Olivia Langley</div>
+        <div>&copy; 2020 Olivia Langley</div>
       </div>
     </body>
     <script>console.log("thanks for stopping by!")</script>
@@ -195,6 +200,22 @@
         setTimeout(function(){
           $('body').addClass('loaded');
         }, 1500);
+      });
+    </script>
+    <script>
+      $(window).scroll(function () {
+        var break1 = $('#home').height() - $('nav').height()/2;
+        var break2 = break1 + $('#about').height();
+        var break3 = break2 + $('#education').height();
+        if ($(this).scrollTop() > break3) {
+          $('nav').addClass('navbar-dark');
+        } else if ($(this).scrollTop() > break2) {
+          $('nav').removeClass('navbar-dark');
+        } else if ($(this).scrollTop() > break1) {
+          $('nav').addClass('navbar-dark');
+        } else if ($(this).scrollTop() <= break1) {
+          $('nav').removeClass('navbar-dark');
+        }
       });
     </script>
 </html>
