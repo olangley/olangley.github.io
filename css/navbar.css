@@ -1,5 +1,10 @@
 .navbar {
+    overflow: hidden;
     background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
     opacity: 0;
 }
 
@@ -9,39 +14,52 @@
     transition: all 1s;
 }
 
-.navbar .navbar-nav > li > a {
-    color: #e6e6e6;
-    padding-right: 5px;
-    padding-left: 5px;
+.navbar-left a {
+    float: left;
+}
+
+.navbar-right a {
+    float: right;
+}
+
+.navbar-left {
+    margin-left: 15px;
+}
+
+.navbar-right {
+    margin-right: 15px;
+}
+
+.navbar > div > a {
+    display: block;
+    text-align: center;
+    padding: 13px 5px;
+    text-decoration: none;
     font-weight: 600;
-}
-
-.navbar .navbar-nav > li > a:hover,
-.navbar .navbar-nav > li > a:focus {
-    color: #990000;
-    background-color: transparent;
-}
-
-.navbar2 .navbar-nav > li > a {
-    color: black;
-}
-
-.navbar2 .navbar-nav > li > a:hover,
-.navbar2 .navbar-nav > li > a:focus {
-    color: #990000;
-}
-
-.navbar3 .navbar-nav > li > a {
     color: #e6e6e6;
 }
 
-.navbar3 .navbar-nav > li > a:hover,
-.navbar3 .navbar-nav > li > a:focus {
+.navbar > div > a:hover,
+.navbar > div > a:focus {
+    color: #990000;
+}
+
+.navbar2 > div > a {
     color: black;
 }
 
-#right {
-    padding-right: 20px;
+.navbar2 > div > a:hover,
+.navbar2 > div > a:focus {
+    color: #990000;
+}
+
+.navbar3 > div > a {
+    color: #e6e6e6;
+}
+
+.navbar3 > div > a:hover,
+.navbar3 > div > a:focus {
+    color: black;
 }
 
 @media (max-width: 767px) {
@@ -54,4 +72,4 @@
     .navbar {
         display: none;
     }
-}
+}*/

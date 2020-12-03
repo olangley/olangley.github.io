@@ -6,13 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/navbar.css">
         <link rel="stylesheet" href="css/preloader.css">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/navbar.css">
         <link rel="icon" href="favicon.ico">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="https://kit.fontawesome.com/e0a97e5d0b.js" crossorigin="anonymous"></script>
         <script src="js/script.js"></script>
         <noscript><link rel="stylesheet" href="css/no-js.css"></noscript>
@@ -21,20 +19,16 @@
       <div id="preloader-container">
         <div id="preloader"></div>
       </div>
-      <nav class="navbar navbar-fixed-top">
-          <div class="container-fluid">
-              <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-left">
-                    <li><a href="#home"><i class="fas fa-home" style="font-size: 18pt;"></i></a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#education">education</a></li>
-                    <li><a href="#experience" id="right">experience</a></li>
-                </ul>
-              </div>
-          </div>
-      </nav>
+      <div class="navbar">
+        <div class="navbar-left">
+            <a href="#home"><i class="fas fa-home" style="font-size: 18pt; margin-top: 2px;"></i></a>
+        </div>
+        <div class="navbar-right">
+            <a href="#experience" id="right">experience</a></li>
+            <a href="#education">education</a></li>
+            <a href="#about">about</a></li>
+        </div>
+      </div>
       <section id="home" class="overlay1">
         <div id="home-container">
           <div id="sketch-container">
@@ -82,12 +76,12 @@
             <div class="space-between">
               <div class="bold-header">Brown University, Providence, RI</div>
               <div class="flex-space"></div>
-              <div class="date">September 2015 - May 2020</div>
+              <div class="align-right">September 2015 - May 2020</div>
             </div>
             <div class="location-marker">
-              <p>
+              <div>
                 <i class="fas fa-graduation-cap"></i>Sc.B. - Computer Science, Music
-              </p>
+              </div>
             </div>
             <p>Relevant Coursework:</p>
             <ul>
@@ -132,7 +126,7 @@
             <div class="space-between">
               <div class="bold-header">Associate Security Consultant <span class="at-symbol">@</span> <a target="_blank" href="https://www.netspi.com/">NetSPI</a></div>
               <div class="flex-space"></div>
-              <div class="date">Spring 2021</div>
+              <div class="align-right">Spring 2021</div>
             </div>
             <div class="location-marker">
               <i class="fas fa-map-marker-alt"></i>Portland, OR
@@ -145,7 +139,7 @@
             <div class="space-between">
               <div class="bold-header">Head Teaching Assistant <span class="at-symbol">@</span> <a target="_blank" href="https://cs.brown.edu/">Brown CS</a></div>
               <div class="flex-space"></div>
-              <div class="date">Spring 2020</div>
+              <div class="align-right">Spring 2020</div>
             </div>
             <div class="location-marker">
               <i class="fas fa-map-marker-alt"></i>Providence, RI
@@ -161,7 +155,7 @@
             <div class="space-between">
               <div class="bold-header">Information Security Intern <span class="at-symbol">@</span> <a target="_blank" href="https://www.qorvo.com/">Qorvo</a></div>
               <div class="flex-space"></div>
-              <div class="date">Summer 2019</div>
+              <div class="align-right">Summer 2019</div>
             </div>
             <div class="location-marker">
               <i class="fas fa-map-marker-alt"></i>Hillsboro, OR
@@ -176,7 +170,7 @@
             <div class="space-between">
               <div class="bold-header">Software Engineering Intern <span class="at-symbol">@</span> <a target="_blank" href="https://www.qorvo.com/">Qorvo</a></div>
               <div class="flex-space"></div>
-              <div class="date">Summer 2017, Summer 2018</div>
+              <div class="align-right">Summer 2017, Summer 2018</div>
             </div>
             <div class="location-marker">
               <i class="fas fa-map-marker-alt"></i>Hillsboro, OR
@@ -195,7 +189,7 @@
           <a target="_blank" href="https://www.linkedin.com/in/oliviaslangley/" class="icon"><i class="fab fa-linkedin-in"></i></a>
           <a target="_blank" href="https://github.com/olangley" class="icon"><i class="fab fa-github"></i></a>
         </div>
-        <div>&copy; 2020 Olivia Langley</div>
+        <div class="align-right">&copy; 2020 Olivia Langley</div>
       </div>
     </body>
 </html>

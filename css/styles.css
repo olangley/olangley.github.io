@@ -9,6 +9,7 @@ html, body {
 body {
   font-family: "Assistant", Helvetica, sans-serif;
   font-size: 12pt;
+  line-height: 1.45;
   color: black;
   background-color: black;
 }
@@ -85,7 +86,7 @@ ul {
 
 #sketch-copyright {
   position: absolute;
-  bottom: -10px;
+  bottom: -5px;
   left: 7px;
   font-size: 10pt;
 }
@@ -96,10 +97,10 @@ ul {
 
 #home-text {
   flex-direction: column;
-  height: 250px;
+  height: 255px;
   width: 350px;
   font-size: 13pt;
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 .space-between {
@@ -112,14 +113,14 @@ ul {
 #speech-bubble {
   color: #e6e6e6;
   font-family: Helvetica, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 22pt;
-  /*background: #4d80b3;*/
   background: #397cac;
   border-radius: 16px;
-  width: 320px;
+  width: 305px;
   padding: 8px;
-  margin-left: -50px;
+  line-height: 1.4;
+  margin-left: -55px;
   text-align: center;
   position: relative;
 }
@@ -132,7 +133,6 @@ ul {
   width: 0;
   height: 0;
   border: 20px solid transparent;
-  /*border-right-color: #4d80b3;*/
   border-right-color: #397cac;
   border-left: 0;
   border-bottom: 0;
@@ -157,7 +157,7 @@ ul {
 
 #arrow-wrapper {
   position: absolute;
-  bottom: 15px;
+  bottom: 5px;
   right: 30px;
   height: 55px;
   width: 35px;
@@ -173,29 +173,29 @@ ul {
 
 @-webkit-keyframes bounce {
   0% {
-    padding-top: 0;
+    padding-bottom: 0;
   }
 
   50% {
-    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   100% {
-    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
 @keyframes bounce {
   0% {
-    padding-top: 0;
+    padding-bottom: 0;
   }
 
   50% {
-    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   100% {
-    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -248,6 +248,7 @@ h1 {
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
   padding: 10px 40px 30px 40px;
+  width: 700px;
 }
 
 .center-header {
@@ -259,7 +260,7 @@ h1 {
   font-weight: 700;
 }
 
-.date {
+.align-right {
   text-align: right;
 }
 
@@ -301,7 +302,7 @@ a.skill-box:hover {
 }
 
 .location-marker {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   font-style: italic;
 }
 
@@ -331,6 +332,9 @@ a.skill-box:hover {
   #home-container {
     flex-direction: column;
   }
+
+/*IMPORTANT!!!!! CHANGE TOP MARGIN OF SKETCH + BOTTOM MARGIN OF TEXT INSTEAD OF CHANGING TOP MARGIN OF TEXT
+(I.E. BASE SPACING ON THE HEIGHT OF THE DEVICE)*/
 
   #home-text {
     height: 220px;
@@ -538,5 +542,12 @@ a.skill-box:hover {
 
   .bold-header {
     font-size: 11pt;
+  }
+}
+
+/* use Arial for Firefox only */
+@-moz-document url-prefix() { 
+  #speech-bubble {
+    font-family: Arial, sans-serif;
   }
 }
