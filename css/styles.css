@@ -324,8 +324,26 @@ a.skill-box:hover {
 
 /* small tablet (portrait) */
 @media screen and (max-width: 650px) and (orientation: portrait) {
-  .overlay1, .overlay2 {
-    background: no-repeat center center scroll; 
+  .overlay1 {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.9), 
+      rgba(0, 0, 0, 0.9)
+    ), no-repeat center center scroll url(../images/texture.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .overlay2 {
+    background: linear-gradient(
+      rgba(120, 120, 120, 0.93), 
+      rgba(120, 120, 120, 0.93)
+    ), no-repeat center center scroll url(../images/texture.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 
   #home-container {
@@ -462,8 +480,26 @@ a.skill-box:hover {
     font-size: 16pt;
   }
 
-  .overlay1, .overlay2 {
-    background: no-repeat center center scroll; 
+  .overlay1 {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.9), 
+      rgba(0, 0, 0, 0.9)
+    ), no-repeat center center scroll url(../images/texture.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .overlay2 {
+    background: linear-gradient(
+      rgba(120, 120, 120, 0.93), 
+      rgba(120, 120, 120, 0.93)
+    ), no-repeat center center scroll url(../images/texture.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 
   #home-text {
