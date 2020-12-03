@@ -22,6 +22,7 @@ section {
   align-items: center;
   justify-content: center;
   opacity: 0;
+  background-color: #e6e6e6;
 }
 
 .loaded section {
@@ -65,8 +66,8 @@ ul {
 
 .overlay2 {
   background: linear-gradient(
-    rgba(115, 115, 115, 0.93), 
-    rgba(115, 115, 115, 0.93)
+    rgba(153, 153, 153, 0.93), 
+    rgba(153, 153, 153, 0.93)
   ), no-repeat center fixed url(../images/texture4.jpg);
   background-size: cover;
   -o-background-size: cover;
@@ -130,6 +131,7 @@ ul {
 .icon, .icon:visited, .icon:active, .icon:focus {
   text-decoration: none;
   color: #b3b3b3;
+  margin-right: 10px;
 }
 
 .icon:hover {
@@ -139,7 +141,6 @@ ul {
 
 .home-icon {
   font-size: 17pt;
-  margin-right: 10px;
 }
 
 #sketch-container {
@@ -204,10 +205,6 @@ ul {
   100% {
     padding-top: 0;
   }
-}
-
-#about {
-  background-color: #e6e6e6;
 }
 
 .section-container {
@@ -288,10 +285,6 @@ a.skill-box:hover {
   font-weight: normal;
 }
 
-#experience {
-  background-color: #e6e6e6;
-}
-
 .experience-box {
   margin-bottom: 20px;
   padding-left: 20px;
@@ -299,7 +292,7 @@ a.skill-box:hover {
 }
 
 .at-symbol {
-  color: #737373;
+  color: #8c8c8c;
 }
 
 .flex-space {
@@ -320,10 +313,7 @@ a.skill-box:hover {
 .footer {
   padding: 15px 20px 15px 20px;
   color: #cccccc;
-}
-
-.footer-icon {
-  margin: 2px;
+  border-bottom: 3pt solid #36597d;
 }
 
 @media screen and (max-width: 650px) and (orientation: portrait) {
