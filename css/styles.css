@@ -75,7 +75,7 @@ ul {
 }
 
 #home-container {
-  color: #f2f2f2;
+  color: #b3b3b3;
   width: 650px;
   padding: 0 40px 0 35px;
   display: flex;
@@ -100,6 +100,7 @@ ul {
 }
 
 #speech-bubble {
+  color: #cccccc;
   font-family: "Zilla Slab", "Assistant", Helvetica, sans-serif;
   font-style: italic;
   font-weight: 300;
@@ -128,16 +129,16 @@ ul {
 
 .icon, .icon:visited, .icon:active, .icon:focus {
   text-decoration: none;
-  color: #f2f2f2;
+  color: #b3b3b3;
 }
 
 .icon:hover {
   text-decoration: none;
-  color: #a30000;
+  color: white;
 }
 
 .home-icon {
-  font-size: 16pt;
+  font-size: 17pt;
   margin-right: 10px;
 }
 
@@ -173,7 +174,7 @@ ul {
 }
 
 #arrow {
-  color: #f2f2f2;
+  color: #cccccc;
   font-size: 35px;
 }
 
@@ -312,7 +313,7 @@ a.skill-box:hover {
 
 .footer {
   padding: 15px 20px 15px 20px;
-  color: #f2f2f2;
+  color: #cccccc;
 }
 
 .footer-icon {
