@@ -10,12 +10,13 @@
         <link rel="stylesheet" href="css/navbar.css">
         <link rel="stylesheet" href="css/preloader.css">
         <link rel="stylesheet" href="css/styles.css">
-        <link rel="apple-touch-icon" sizes="180x180" href="favicon3/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon3/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon3/favicon-16x16.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="https://kit.fontawesome.com/e0a97e5d0b.js" crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
         <noscript><link rel="stylesheet" href="css/no-js.css"></noscript>
     </head>
     <body>
@@ -70,7 +71,7 @@
           <div>
             <img id="portrait" src="images/portrait.png">
             <p>Hi!  &#128075; Thanks for visiting my website! My name is <b>Olivia Langley</b>, and I'm a recent graduate of the computer science program at <a target="_blank" href="https://www.brown.edu/">Brown University</a> in Providence, RI.</p>
-            <p>My first exposure to programming was playing around with an early version of <a target="_blank" href="https://scratch.mit.edu/">Scratch</a> back in elementary school. I was completely fascinated, and spent hours designing overly complicated mazes and painstakingly drawing my own custom sprites. Despite this early introduction to the ~wonders of code~, I didn't seriously start considering computer science as a career option until the summer before my freshman year of college, when I stumbled upon a documentary on <b>cybersecurity</b>. I was hooked immediately, to the point that I decided &#x2014; almost overnight &#x2014; that I wanted to major in computer science.</p>
+            <p>My first exposure to programming was playing around with an early version of <a target="_blank" href="https://scratch.mit.edu/">Scratch</a> back in elementary school. I was completely fascinated, and spent hours designing overly complicated mazes and painstakingly drawing my own custom sprites. Despite this early introduction to the ~wonders of code~, I didn't seriously start considering computer science as a career option until the summer before my freshman year of college, when I stumbled upon a documentary about recent developments in <b>cybersecurity</b>. I was hooked immediately, to the point that I decided &#x2014; almost overnight &#x2014; that I wanted to major in computer science.</p>
           </div>
           <p>In Summer 2019 I was an intern on the Information Security team at <a target="_blank" href="https://www.qorvo.com/">Qorvo</a>, and in Spring 2020 I was a Head TA for <a target="_blank" href="https://cs.brown.edu/courses/csci1660/">CSCI1660 (Computer Systems Security)</a>. Starting in January I'll be joining <a target="_blank" href="https://www.netspi.com/">NetSPI</a>, a penetration testing company based in Minneapolis, as an Associate Security Consultant.</p>
           <p>Outside of computer science, I’m a big fan of live looping, classic rock, and cheering on my <a target="_blank" href="http://thehigherkeys.com/">college a cappella group</a> from afar. I also consider myself a semi-professional <a target="_blank" href="https://www.stardewvalley.net/">Stardew Valley</a> player, and like to spend my free time attempting to break the game by min/max-ing as much as humanly possible. &#127922;</p>
@@ -82,9 +83,14 @@
           <div id="brown-container">
             <div class="space-between">
               <div class="bold-header">Brown University, Providence, RI</div>
+              <div class="flex-space"></div>
               <div class="date">September 2015 - May 2020</div>
             </div>
-            <p>Sc.B. - Computer Science, Music</p>
+            <div class="location-marker">
+              <p>
+                <i class="fas fa-graduation-cap"></i>Sc.B. - Computer Science, Music
+              </p>
+            </div>
             <p>Relevant Coursework:</p>
             <ul>
               <li>Computational Molecular Biology</li>
@@ -126,7 +132,7 @@
           <h1 class="header"><span>Experience</span></h1>
           <div class="experience-box" style="border-color: #82a6c9;">
             <div class="space-between">
-              <div class="bold-header">Associate Security Consultant @ <a target="_blank" href="https://www.netspi.com/">NetSPI</a></div>
+              <div class="bold-header">Associate Security Consultant <span class="at-symbol">@</span> <a target="_blank" href="https://www.netspi.com/">NetSPI</a></div>
               <div class="flex-space"></div>
               <div class="date">Spring 2021</div>
             </div>
@@ -139,7 +145,7 @@
           </div>
           <div class="experience-box" style="border-color: #5e8cba;">
             <div class="space-between">
-              <div class="bold-header">Head Teaching Assistant @ <a target="_blank" href="https://cs.brown.edu/">Brown CS</a></div>
+              <div class="bold-header">Head Teaching Assistant <span class="at-symbol">@</span> <a target="_blank" href="https://cs.brown.edu/">Brown CS</a></div>
               <div class="flex-space"></div>
               <div class="date">Spring 2020</div>
             </div>
@@ -155,7 +161,7 @@
           </div>
           <div class="experience-box" style="border-color: #4573a1;">
             <div class="space-between">
-              <div class="bold-header">Information Security Intern @ <a target="_blank" href="https://www.qorvo.com/">Qorvo</a></div>
+              <div class="bold-header">Information Security Intern <span class="at-symbol">@</span> <a target="_blank" href="https://www.qorvo.com/">Qorvo</a></div>
               <div class="flex-space"></div>
               <div class="date">Summer 2019</div>
             </div>
@@ -170,7 +176,7 @@
           </div>
           <div class="experience-box" style="border-color: #36597d;">
             <div class="space-between">
-              <div class="bold-header">Software Engineering Intern @ <a target="_blank" href="https://www.qorvo.com/">Qorvo</a></div>
+              <div class="bold-header">Software Engineering Intern <span class="at-symbol">@</span> <a target="_blank" href="https://www.qorvo.com/">Qorvo</a></div>
               <div class="flex-space"></div>
               <div class="date">Summer 2017, Summer 2018</div>
             </div>
@@ -194,31 +200,4 @@
         <div>&copy; 2020 Olivia Langley</div>
       </div>
     </body>
-    <script>console.log("thanks for stopping by!")</script>
-    <script>
-      $(document).ready(function() {
-        setTimeout(function(){
-          $('body').addClass('loaded');
-        }, 1500);
-      });
-    </script>
-    <script>
-      $(window).scroll(function () {
-        var break1 = $('#home').height() - $('nav').height()/2;
-        var break2 = break1 + $('#about').height();
-        var break3 = break2 + $('#education').height();
-        if ($(this).scrollTop() > break3) {
-          $('nav').removeClass('navbar-blue');
-          $('nav').addClass('navbar-dark');
-        } else if ($(this).scrollTop() > break2) {
-          $('nav').removeClass('navbar-dark');
-          $('nav').addClass('navbar-blue');
-        } else if ($(this).scrollTop() > break1) {
-          $('nav').removeClass('navbar-blue');
-          $('nav').addClass('navbar-dark');
-        } else if ($(this).scrollTop() <= break1) {
-          $('nav').removeClass('navbar-dark');
-        }
-      });
-    </script>
 </html>
