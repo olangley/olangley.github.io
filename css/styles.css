@@ -324,7 +324,7 @@ a.skill-box:hover {
 
 /* small tablet (portrait) */
 @media screen and (max-width: 650px) and (orientation: portrait) {
-  .overlay {
+  .overlay1, .overlay2 {
     background-position: scroll;
   }
 
@@ -430,7 +430,7 @@ a.skill-box:hover {
   #home-text {
     width: 240px;
     height: 190px;
-    margin-top: 40px;
+    margin-top: 30px;
     font-size: 11pt;
   }
 
@@ -462,7 +462,7 @@ a.skill-box:hover {
     font-size: 16pt;
   }
 
-  .overlay {
+  .overlay1, .overlay2 {
     background-position: scroll;
   }
 
