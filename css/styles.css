@@ -58,21 +58,21 @@ ul {
     rgba(0, 0, 0, 0.9), 
     rgba(0, 0, 0, 0.9)
   ), no-repeat center fixed url(../images/texture4.jpg);
-  background-size: cover;
-  -o-background-size: cover;
-  -moz-background-size: cover;
   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .overlay2 {
   background: linear-gradient(
-    rgba(153, 153, 153, 0.93), 
-    rgba(153, 153, 153, 0.93)
+    rgba(120, 120, 120, 0.93), 
+    rgba(120, 120, 120, 0.93)
   ), no-repeat center fixed url(../images/texture4.jpg);
-  background-size: cover;
-  -o-background-size: cover;
-  -moz-background-size: cover;
   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #home-container {
@@ -82,9 +82,10 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(89, 89, 89, 0.15);  
-  backdrop-filter: saturate(150%) blur(5px);
-  -webkit-backdrop-filter: saturate(150%) blur(5px);
+  background-color: rgba(102, 102, 105, 0.15);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
 }
 
 #home-text {
@@ -245,9 +246,9 @@ ul {
 }
 
 #education-container {
-  background-color: rgba(230, 230, 230, 0.5);  
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px);
+  background-color: rgba(230, 230, 230, 0.5);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
   padding: 10px 40px 30px 40px;
 }
 
@@ -316,11 +317,8 @@ a.skill-box:hover {
   border-bottom: 3pt solid #36597d;
 }
 
+/* small tablet (portrait) */
 @media screen and (max-width: 650px) and (orientation: portrait) {
-  h1 {
-    font-size: 16pt;
-  }
-
   .overlay {
     background-position: scroll;
   }
@@ -360,14 +358,23 @@ a.skill-box:hover {
     display: none;
   }
 
+  #education-container {
+    padding: 10px 30px 30px 30px;
+  }
+
   .bold-header {
     font-size: 12pt;
   }
 }
 
+/* large phone (portrait) */
 @media screen and (max-width: 500px) and (orientation: portrait) {
   body {
     font-size: 11pt;
+  }
+
+  h1 {
+    font-size: 16pt;
   }
 
   #portrait {
@@ -393,6 +400,7 @@ a.skill-box:hover {
   }
 }
 
+/* small phone (portrait) */
 @media screen and (max-width: 340px) and (orientation: portrait) {
   #home-container {
     width: 280px;
@@ -417,9 +425,14 @@ a.skill-box:hover {
   }
 }
 
+/* large phone (landscape) */
 @media screen and (max-height: 500px) and (orientation: landscape) {
   body {
     font-size: 11pt;
+  }
+
+  h1 {
+    font-size: 16pt;
   }
 
   .overlay {
@@ -444,11 +457,21 @@ a.skill-box:hover {
     display: none;
   }
 
+  .section-container {
+    margin: 40px 45px;
+  }
+
+  #education-container {
+    margin: 55px 45px;
+    padding: 5px 25px 25px 25px;
+  }
+
   .bold-header {
-    font-size: 11pt;
+    font-size: 12pt;
   }
 }
 
+/* small phone (landscape) */
 @media screen and (max-height: 350px) and (orientation: landscape) {
   #home-container {
     width: 450px;
@@ -477,7 +500,6 @@ a.skill-box:hover {
 
   #sketch {
     height: 160px;
-    width: auto;
     margin-right: 20px;
   }
 
@@ -486,20 +508,16 @@ a.skill-box:hover {
     left: 2px;
   }
 
-  #arrow-wrapper {
-    display: none;
-  }
-
   .section-container {
-    margin: 20px 30px 25px 30px;
+    margin: 25px 30px;
   }
 
   #education-container {
-    margin: 20px;
+    margin: 40px 30px;
     padding: 0 25px 20px 25px;
   }
 
-  .experience-box {
-    padding-left: 12px;
+  .bold-header {
+    font-size: 11pt;
   }
 }
