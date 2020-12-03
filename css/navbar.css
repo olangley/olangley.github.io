@@ -18,7 +18,7 @@
 
 .navbar .navbar-nav > li > a:hover,
 .navbar .navbar-nav > li > a:focus {
-    color: #b31919;
+    color: #a30000;
     background-color: transparent;
 }
 
@@ -28,7 +28,16 @@
 
 .navbar-dark .navbar-nav > li > a:hover,
 .navbar-dark .navbar-nav > li > a:focus {
-    color: #990000;
+    color: #a30000;
+}
+
+.navbar-blue .navbar-nav > li > a {
+    color: #f2f2f2;
+}
+
+.navbar-blue .navbar-nav > li > a:hover,
+.navbar-blue .navbar-nav > li > a:focus {
+    color: #4d80b3;
 }
 
 #right {
