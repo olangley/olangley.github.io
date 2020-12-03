@@ -80,7 +80,7 @@ ul {
 
 #sketch {
   height: 340px;
-  margin-right: 30px;
+  margin-right: 50px;
 }
 
 #sketch-copyright {
@@ -96,7 +96,7 @@ ul {
 
 #home-text {
   flex-direction: column;
-  height: 240px;
+  height: 250px;
   width: 350px;
   font-size: 13pt;
   margin-top: 15px;
@@ -157,8 +157,8 @@ ul {
 
 #arrow-wrapper {
   position: absolute;
-  bottom: 1%;
-  right: 2%;
+  bottom: 15px;
+  right: 30px;
   height: 55px;
   width: 35px;
   text-align: center;
@@ -273,7 +273,7 @@ a.skill-box, .skill-box:visited, .skill-box:active, .skill-box:focus {
   font-size: 11pt;
   color: white;
   background-color: #8f0000;
-  padding: 2px 5px;
+  padding: 1px 5px;
   margin: 5px 7px 0 0;
   font-weight: normal;
 }
@@ -291,7 +291,7 @@ a.skill-box:hover {
 }
 
 .at-symbol {
-  color: #999999;
+  color: #808080;
 }
 
 .flex-space {
@@ -312,7 +312,14 @@ a.skill-box:hover {
 .footer {
   padding: 15px 20px 15px 20px;
   color: #cccccc;
-  border-bottom: 3pt solid #3e6a8e;
+  border-bottom: 3pt solid #3d6d8f;
+  opacity: 0;
+}
+
+.loaded .footer {
+    opacity: 1;
+    -webkit-transition: all 1s;
+    transition: all 1s;
 }
 
 /* small tablet (portrait) */
@@ -322,18 +329,18 @@ a.skill-box:hover {
   }
 
   #home-container {
-    width: 310px;
-    padding: 20px 30px 25px 30px;
     flex-direction: column;
   }
 
   #home-text {
-    width: 100%;
-    margin-top: 30px;
+    height: 220px;
+    width: 340px;
+    margin-top: 60px;
+    text-align: justify;
   }
 
   #sketch {
-    height: 200px;
+    height: 320px;
     margin: 0;
   }
 
@@ -344,8 +351,11 @@ a.skill-box:hover {
 
   #speech-bubble {
     background: transparent;
+    width: 100%;
     margin-left: 0;
     padding: 0;
+    font-size: 24pt;
+    text-align: left;
   }
 
   #speech-bubble:after {
@@ -375,6 +385,19 @@ a.skill-box:hover {
     font-size: 16pt;
   }
 
+  #home-text {
+    width: 270px;
+    font-size: 12pt;
+  }
+
+  #sketch {
+    height: 240px;
+  }
+
+  #speech-bubble {
+    font-size: 20pt;
+  }
+
   #portrait {
     height: 120px;
     margin-left: 20px;
@@ -400,17 +423,23 @@ a.skill-box:hover {
 
 /* small phone (portrait) */
 @media screen and (max-width: 340px) and (orientation: portrait) {
-  #home-container {
-    width: 280px;
-    padding: 20px 20px 20px 20px;
+  #sketch {
+    height: 200px;
   }
 
-  #sketch {
-    height: 170px;
+  #home-text {
+    width: 240px;
+    height: 190px;
+    margin-top: 40px;
+    font-size: 11pt;
   }
 
   #speech-bubble {
-    font-size: 20pt;
+    font-size: 18pt;
+  }
+
+  .home-icon {
+    font-size: 16pt;
   }
 
   .section-container {
@@ -437,18 +466,24 @@ a.skill-box:hover {
     background-position: scroll;
   }
 
-  #home-container {
-    width: 560px;
+  #home-text {
+    font-size: 12pt;
+    width: 270px;
+    height: 240px;
   }
 
   #speech-bubble {
     font-size: 20pt;
-    width: 255px;
-    padding: 4px 10px 4px 15px;
+    width: 300px;
   }
 
   #sketch {
-    height: 250px;
+    height: 280px;
+  }
+
+  #sketch-copyright {
+    font-size: 9pt;
+    left: 6px;
   }
 
   #arrow-wrapper {
@@ -471,39 +506,25 @@ a.skill-box:hover {
 
 /* small phone (landscape) */
 @media screen and (max-height: 350px) and (orientation: landscape) {
-  #home-container {
-    width: 450px;
-    font-size: 9pt;
-  }
-
   #home-text {
-    height: 150px;
-    margin-top: 0;
-  }
-
-  .home-icon {
-    font-size: 14pt;
+    font-size: 10pt;
+    width: 230px;
+    height: 200px;
   }
 
   #speech-bubble {
-    font-size: 16pt;
-    background: transparent;
-    margin-left: 0;
-    padding: 0;
-  }
-
-  #speech-bubble:after {
-    display: none;
+    font-size: 17pt;
+    width: 250px;
+    margin-left: -30px;
   }
 
   #sketch {
-    height: 160px;
+    height: 230px;
     margin-right: 20px;
   }
 
-  #sketch-copyright {
-    font-size: 8pt;
-    left: 2px;
+  .home-icon {
+    font-size: 16pt;
   }
 
   .section-container {
