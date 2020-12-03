@@ -48,8 +48,8 @@ ul {
 
 .overlay1 {
   background: linear-gradient(
-    rgba(0, 0, 0, 0.9), 
-    rgba(0, 0, 0, 0.9)
+    rgba(0, 0, 0, 0.88), 
+    rgba(0, 0, 0, 0.88)
   ), no-repeat center fixed url(../images/texture.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;

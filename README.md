@@ -7,4 +7,4 @@
 * More animations/interaction
 * New color scheme?
 
-Thanks for stopping by! 💕
+Thanks for stopping by! 👋
