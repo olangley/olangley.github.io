@@ -22,7 +22,7 @@ section {
   align-items: center;
   justify-content: center;
   opacity: 0;
-  background-color: #e6e6e6;
+  background-color: #f2f2f2;
 }
 
 .loaded section {
@@ -76,21 +76,9 @@ ul {
   align-items: center;
 }
 
-#sketch-container {
-  position: relative;
-}
-
 #sketch {
   height: 420px;
   margin-right: 70px;
-}
-
-#sketch-copyright {
-  position: absolute;
-  bottom: 12px;
-  left: 6px;
-  font-size: 10pt;
-  display: none;
 }
 
 #sketch-copyright a {
@@ -126,6 +114,13 @@ ul {
   text-align: center;
   position: relative;
 }
+
+/* use Arial for Firefox only */
+@-moz-document url-prefix() {
+  #speech-bubble {
+    font-family: Arial, sans-serif;
+  }
+} 
 
 #speech-bubble:before {
   content: "";
@@ -216,6 +211,8 @@ ul {
   margin: 60px;
 }
 
+/* about section */
+
 h1 {
   font-family: "Assistant", Helvetica, sans-serif;
   font-weight: 700;
@@ -255,6 +252,8 @@ h1 {
   margin: 0 10px 30px 40px;
 }
 
+/* education section */
+
 #education-container {
   background-color: rgba(230, 230, 230, 0.5);
   -webkit-backdrop-filter: blur(2px);
@@ -282,7 +281,7 @@ h1 {
   margin-top: -5px;
 }
 
-a.skill-box, .skill-box:visited, .skill-box:active, .skill-box:focus {
+a.skill-box, a.skill-box:visited, a.skill-box:active, a.skill-box:focus {
   font-size: 11pt;
   color: white;
   background-color: #8f0000;
@@ -296,6 +295,8 @@ a.skill-box:hover {
   text-decoration: none;
   font-weight: normal;
 }
+
+/* experience section */
 
 .experience-box {
   margin-bottom: 20px;
@@ -312,6 +313,8 @@ a.skill-box:hover {
   flex: 1 0 10%;
   flex-flow: row nowrap;
 }
+
+/* footer */
 
 .location-marker {
   margin-bottom: 8px;
@@ -335,13 +338,15 @@ a.skill-box:hover {
     transition: all 1s;
 }
 
+
+/* large mobile device (landscape) */
 @media (max-width: 850px) and (orientation: landscape) {
   #arrow-wrapper {
     display: none;
   }
 }
 
-/* large phone (landscape) */
+/* medium-large mobile device (landscape) */
 @media screen and (max-width: 820px) {
   .overlay1, .overlay2 {
     background-attachment: scroll;
@@ -370,9 +375,10 @@ a.skill-box:hover {
   }
 }
 
-/* small phone (landscape) */
-/*@media screen and (max-width: 660px) {
+/* small mobile device (landscape) */
+@media screen and (max-width: 660px) {
   #home-text {
+    height: 220px;
     width: 270px;
     font-size: 12pt;
   }
@@ -394,9 +400,10 @@ a.skill-box:hover {
   #speech-bubble:before, #speech-bubble:after {
     display: none;
   }
-}*/
+}
 
-@media only screen and (max-width: 600px) {
+/* large mobile device (portrait) */
+@media only screen and (max-width: 700px) and (orientation: portrait) {
   body {
     font-size: 11pt;
   }
@@ -417,10 +424,6 @@ a.skill-box:hover {
   #sketch {
     height: 250px;
     margin: 0;
-  }
-
-  #sketch-copyright {
-    display: none;
   }
 
   #home-text {
@@ -470,17 +473,17 @@ a.skill-box:hover {
     font-size: 11pt;
 }
 
-/* small phone (portrait) */
-@media only screen and (max-width: 350px) {
+/* small mobile device (portrait) */
+@media only screen and (max-width: 350px) and (orientation: portrait) {
   #sketch {
     height: 190px;
   }
 
   #home-text {
     font-size: 11pt;
-    height: 190px;
-    width: 230px;
-    margin-top: 20px;
+    height: 200px;
+    width: 250px;
+    margin-top: 30px;
   }
 
   #speech-bubble {
@@ -495,11 +498,4 @@ a.skill-box:hover {
     margin: 40px 20px;
     padding: 0 15px 15px 15px;
   }
-}
-
-/* use Arial for Firefox only */
-@-moz-document url-prefix() { 
-  #speech-bubble {
-    font-family: Arial, sans-serif;
-  }
-}
+} 
