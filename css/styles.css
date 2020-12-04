@@ -81,8 +81,8 @@ ul {
 }
 
 #sketch {
-  height: 440px;
-  margin-right: 80px;
+  height: 420px;
+  margin-right: 70px;
 }
 
 #sketch-copyright {
@@ -335,28 +335,25 @@ a.skill-box:hover {
     transition: all 1s;
 }
 
+@media (max-width: 850px) and (orientation: landscape) {
+  #arrow-wrapper {
+    display: none;
+  }
+}
+
 /* large phone (landscape) */
-@media screen and (max-width: 850px) and (orientation: landscape) {
+@media screen and (max-width: 820px) {
   .overlay1, .overlay2 {
     background-attachment: scroll;
   }
 
   #home-text {
-    height: 230px;
+    height: 240px;
     line-height: 1.45;
   }
 
   #sketch {
     height: 300px;
-    margin-right: 50px;
-  }
-
-  #speech-bubble {
-    margin-left: -12px;
-  }
-
-  #arrow-wrapper {
-    display: none;
   }
 
   .section-container {
@@ -374,7 +371,7 @@ a.skill-box:hover {
 }
 
 /* small phone (landscape) */
-@media screen and (max-width: 650px) and (orientation: landscape) {
+/*@media screen and (max-width: 660px) {
   #home-text {
     width: 270px;
     font-size: 12pt;
@@ -397,15 +394,9 @@ a.skill-box:hover {
   #speech-bubble:before, #speech-bubble:after {
     display: none;
   }
-}
+}*/
 
-/*480 PX FOR IPHONE 4*/
-
-
-/*600PX FOR NEXUS*/
-/*ADD STUFF HERE*/
-
-@media screen and (max-width: 500px) and (orientation: portrait) {
+@media only screen and (max-width: 600px) {
   body {
     font-size: 11pt;
   }
@@ -453,10 +444,6 @@ a.skill-box:hover {
     display: none;
   }
 
-  .home-icon {
-    font-size: 16pt;
-  }
-
   #arrow-wrapper {
     display: none;
   }
@@ -484,16 +471,16 @@ a.skill-box:hover {
 }
 
 /* small phone (portrait) */
-@media screen and (max-width: 350px) and (orientation: portrait) {
+@media only screen and (max-width: 350px) {
   #sketch {
-    height: 200px;
+    height: 190px;
   }
 
   #home-text {
     font-size: 11pt;
     height: 190px;
     width: 230px;
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   #speech-bubble {
