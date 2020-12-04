@@ -128,7 +128,7 @@ ul {
   z-index: 0;
   bottom: 0;
   left: -18px;
-  height: 20px;
+  height: 24px;
   width: 30px;
   background: #397cac;
   border-bottom-right-radius: 15px;
@@ -141,7 +141,7 @@ ul {
   bottom: 0;
   left: -20px;
   width: 20px;
-  height: 20px;
+  height: 24px;
   background: black;
   border-bottom-right-radius: 20px;
 }
@@ -404,10 +404,6 @@ a.skill-box:hover {
 
 /* large mobile device (portrait) */
 @media only screen and (max-width: 700px) and (orientation: portrait) {
-  body {
-    font-size: 11pt;
-  }
-
   h1 {
     font-size: 16pt;
   }
@@ -468,9 +464,6 @@ a.skill-box:hover {
   .experience-box {
     padding-left: 12px;
   }
-
-  .bold-header {
-    font-size: 11pt;
 }
 
 /* small mobile device (portrait) */
