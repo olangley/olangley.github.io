@@ -44,6 +44,7 @@ a:hover {
 
 ul {
   list-style-type: square;
+  margin-top: 0;
 }
 
 .overlay1 {
@@ -323,55 +324,32 @@ a.skill-box:hover {
     transition: all 1s;
 }
 
-/* small tablet (portrait) */
-@media screen and (max-width: 650px) and (orientation: portrait) {
+/* large phone (landscape) */
+@media screen and (max-width: 850px) and (orientation: landscape) {
   .overlay1, .overlay2 {
     background-attachment: scroll;
   }
 
-  #home-container {
-    flex-direction: column;
-  }
-
-/*IMPORTANT!!!!! CHANGE TOP MARGIN OF SKETCH + BOTTOM MARGIN OF TEXT INSTEAD OF CHANGING TOP MARGIN OF TEXT
-(I.E. BASE SPACING ON THE HEIGHT OF THE DEVICE)*/
-
   #home-text {
-    height: 220px;
-    width: 340px;
-    margin-top: 60px;
-    text-align: justify;
+    height: 230px;
   }
 
   #sketch {
-    height: 320px;
-    margin: 0;
-  }
-
-  #sketch-copyright {
-    left: 5px;
-    bottom: -10px;
-  }
-
-  #speech-bubble {
-    background: transparent;
-    width: 100%;
-    margin-left: 0;
-    padding: 0;
-    font-size: 24pt;
-    text-align: left;
-  }
-
-  #speech-bubble:after {
-    display: none;
+    height: 280px;
+    margin-right: 40px;
   }
 
   #arrow-wrapper {
     display: none;
   }
 
+  .section-container {
+    margin: 40px 45px;
+  }
+
   #education-container {
-    padding: 10px 30px 30px 30px;
+    margin: 55px 45px;
+    padding: 5px 25px 25px 25px;
   }
 
   .bold-header {
@@ -379,7 +357,25 @@ a.skill-box:hover {
   }
 }
 
-/* large phone (portrait) */
+/* small phone (landscape) */
+@media screen and (max-width: 640px) and (orientation: landscape) {
+  #home-text {
+    width: 280px;
+    font-size: 12pt;
+  }
+
+  #sketch {
+    height: 260px;
+  }
+
+  #speech-bubble {
+    font-size: 20pt;
+  }
+}
+
+/*600PX FOR NEXUS*/
+/*ADD STUFF HERE*/
+
 @media screen and (max-width: 500px) and (orientation: portrait) {
   body {
     font-size: 11pt;
@@ -389,17 +385,50 @@ a.skill-box:hover {
     font-size: 16pt;
   }
 
-  #home-text {
-    width: 270px;
-    font-size: 12pt;
+  .overlay1, .overlay2 {
+    background-attachment: scroll;
+  }
+
+  #home-container {
+    flex-direction: column;
+    width: 80%;
   }
 
   #sketch {
-    height: 240px;
+    height: 250px;
+    margin: 0;
+  }
+
+  #sketch-copyright {
+    display: none;
+  }
+
+  #home-text {
+    width: 100%;
+    height: 220px;
+    margin-top: 20px;
+    text-align: justify;
   }
 
   #speech-bubble {
+    background: transparent;
+    width: 100%;
+    margin-left: 0;
+    padding: 0;
     font-size: 20pt;
+    text-align: left;
+  }
+
+  #speech-bubble:after {
+    display: none;
+  }
+
+  .home-icon {
+    font-size: 16pt;
+  }
+
+  #arrow-wrapper {
+    display: none;
   }
 
   #portrait {
@@ -422,28 +451,21 @@ a.skill-box:hover {
 
   .bold-header {
     font-size: 11pt;
-  }
 }
 
 /* small phone (portrait) */
-@media screen and (max-width: 340px) and (orientation: portrait) {
+@media screen and (max-width: 350px) and (orientation: portrait) {
   #sketch {
-    height: 200px;
+    height: 230px;
   }
 
   #home-text {
-    width: 240px;
-    height: 180px;
-    margin-top: 15px;
     font-size: 11pt;
+    height: 200px;
   }
 
   #speech-bubble {
-    font-size: 18pt;
-  }
-
-  .home-icon {
-    font-size: 14pt;
+    font-size: 16pt;
   }
 
   .section-container {
@@ -453,95 +475,6 @@ a.skill-box:hover {
   #education-container {
     margin: 40px 20px;
     padding: 0 15px 15px 15px;
-  }
-}
-
-/* large phone (landscape) */
-@media screen and (max-height: 500px) and (orientation: landscape) {
-  body {
-    font-size: 11pt;
-  }
-
-  h1 {
-    font-size: 16pt;
-  }
-
-  .overlay1, .overlay2 {
-    background-attachment: scroll;
-  }
-
-  #home-text {
-    font-size: 12pt;
-    width: 270px;
-    height: 240px;
-  }
-
-  #speech-bubble {
-    font-size: 20pt;
-    width: 300px;
-  }
-
-  #sketch {
-    height: 280px;
-  }
-
-  #sketch-copyright {
-    font-size: 9pt;
-    left: 6px;
-  }
-
-  #arrow-wrapper {
-    display: none;
-  }
-
-  .section-container {
-    margin: 40px 45px;
-  }
-
-  #education-container {
-    margin: 55px 45px;
-    padding: 5px 25px 25px 25px;
-  }
-
-  .bold-header {
-    font-size: 12pt;
-  }
-}
-
-/* small phone (landscape) */
-@media screen and (max-height: 350px) and (orientation: landscape) {
-  #home-text {
-    font-size: 10pt;
-    width: 230px;
-    height: 200px;
-  }
-
-  #speech-bubble {
-    font-size: 17pt;
-    width: 250px;
-    margin-left: -30px;
-  }
-
-  #sketch {
-    height: 230px;
-    margin-right: 20px;
-  }
-
-  .home-icon {
-    font-size: 16pt;
-  }
-
-  .section-container {
-    margin: 25px 30px;
-  }
-
-  #education-container {
-    margin: 40px 30px;
-    padding: 0 25px 20px 25px;
-  }
-
-  .bold-header {
-    font-size: 11pt;
   }
 }
 
