@@ -81,7 +81,7 @@ ul {
 }
 
 #sketch {
-  height: 420px;
+  height: 430px;
   margin-right: 80px;
 }
 
@@ -118,8 +118,9 @@ ul {
   font-weight: 700;
   font-size: 22pt;
   background: #397cac;
-  border-radius: 16px;
-  width: 305px;
+  /*border-radius: 16px;*/
+  border-radius: 25px;
+  width: 315px;
   padding: 8px;
   line-height: 1.4;
   margin-left: -50px;
@@ -127,7 +128,7 @@ ul {
   position: relative;
 }
 
-#speech-bubble:after {
+/*#speech-bubble:after {
   content: '';
   position: absolute;
   left: 0;
@@ -139,6 +140,30 @@ ul {
   border-left: 0;
   border-bottom: 0;
   margin: -11px 0 0 -19px;
+}*/
+
+#speech-bubble:before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  left: -18px;
+  height: 30px;
+  width: 30px;
+  background: #397cac;
+  border-bottom-right-radius: 15px;
+}
+
+#speech-bubble:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: -20px;
+  width: 20px;
+  height: 40px;
+  background: black;
+  border-bottom-right-radius: 20px;
 }
 
 .icon, .icon:visited, .icon:active, .icon:focus {
