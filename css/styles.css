@@ -42,11 +42,6 @@ a:hover {
   color: #990000;
 }
 
-ul {
-  list-style-type: square;
-  margin-top: 0;
-}
-
 .overlay1 {
   background: linear-gradient(
     rgba(0, 0, 0, 0.88), 
@@ -106,7 +101,7 @@ ul {
   font-weight: 700;
   font-size: 22pt;
   background: #397cac;
-  border-radius: 25px;
+  border-radius: 30px;
   width: 315px;
   padding: 8px;
   margin-left: -50px;
@@ -127,7 +122,7 @@ ul {
   z-index: 0;
   bottom: 0;
   left: -18px;
-  height: 24px;
+  height: 30px;
   width: 30px;
   background: #397cac;
   border-bottom-right-radius: 15px;
@@ -140,7 +135,7 @@ ul {
   bottom: 0;
   left: -20px;
   width: 20px;
-  height: 25px;
+  height: 31px;
   background: #020202;
   border-bottom-right-radius: 20px;
 }
@@ -213,10 +208,10 @@ ul {
 /* about section */
 
 h1 {
-  font-family: "Assistant", Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-weight: 700;
   margin-bottom: 22px;
-  font-size: 18pt; 
+  font-size: 17pt; 
 }
 
 .header {
@@ -272,6 +267,11 @@ h1 {
 
 .align-right {
   text-align: right;
+}
+
+ul {
+  list-style-type: square;
+  margin-top: 0;
 }
 
 .skill-row {
@@ -350,7 +350,7 @@ a.skill-box:hover {
   body {
     line-height: 1.45;
   }
-  
+
   .overlay1, .overlay2 {
     background-attachment: scroll;
   }
@@ -407,7 +407,7 @@ a.skill-box:hover {
 /* large mobile device (portrait) */
 @media only screen and (max-width: 700px) and (orientation: portrait) {
   h1 {
-    font-size: 16pt;
+    font-size: 15pt;
   }
 
   .overlay1, .overlay2 {
