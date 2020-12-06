@@ -73,7 +73,7 @@ a:hover {
 
 #sketch {
   height: 420px;
-  margin-right: 70px;
+  margin-right: 75px;
 }
 
 #sketch-copyright a {
@@ -143,7 +143,6 @@ a:hover {
 .icon, .icon:visited, .icon:active, .icon:focus {
   text-decoration: none;
   color: #b3b3b3;
-  margin-right: 6px;
 }
 
 .icon:hover {
@@ -151,7 +150,7 @@ a:hover {
   color: white;
 }
 
-.home-icon {
+.home-icon, .home-icon:visited, .home-icon:active, .home-icon:focus {
   font-size: 18pt;
   margin-right: 12px;
 }
@@ -332,11 +331,24 @@ a.skill-box:hover {
 }
 
 .loaded .footer {
-    opacity: 1;
-    -webkit-transition: all 1s;
-    transition: all 1s;
+  opacity: 1;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
+.footer-icon {
+  margin-right: 6px;
+}
+
+a.footer-link, a.footer-link:visited, a.footer-link:active, a.footer-link:focus {
+  color: #cccccc;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+a.footer-link:hover {
+  color: white;
+}
 
 /* large mobile device (landscape) */
 @media (max-width: 850px) and (orientation: landscape) {
@@ -427,7 +439,7 @@ a.skill-box:hover {
   #home-text {
     width: 100%;
     height: 220px;
-    margin-top: 30px;
+    margin-top: 20px;
     text-align: justify;
     line-height: 1.4;
   }
@@ -471,14 +483,14 @@ a.skill-box:hover {
 /* small mobile device (portrait) */
 @media only screen and (max-width: 350px) and (orientation: portrait) {
   #sketch {
-    height: 190px;
+    height: 180px;
   }
 
   #home-text {
     font-size: 11pt;
     height: 200px;
     width: 250px;
-    margin-top: 30px;
+    margin-top: 15px;
   }
 
   #speech-bubble {
