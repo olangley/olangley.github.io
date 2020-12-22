@@ -1,4 +1,4 @@
-console.log("thanks for stopping by!")
+console.log("thanks for stopping by! :) -Olivia")
 
 $(document).ready(function() {
   setTimeout(function(){
