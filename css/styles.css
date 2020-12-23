@@ -4,12 +4,30 @@ html, body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  font-family: "Assistant", Helvetica, sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+/* 16px @ 1408px increasing to 22px @ 1920px */
+@media (min-width: 1408px) {
+  html {
+    font-size: calc(1rem + ((1vw - 14.08px) * 1.1719));
+    /* Note: The calc base value (1rem) MUST be stated in REM to maintain accessibility */
+    /* Where: 1.1719 = 100 * font-size_difference / viewport_width_difference */
+
+    /* Safari resize fix */
+    min-height: 0vw;
+  }
+}
+/* Prevent scaling beyond this breakpoint */
+@media (min-width: 1920px) {
+  html {
+    font-size: 22px;
+  }
 }
 
 body {
-  font-family: "Assistant", Helvetica, sans-serif;
-  font-size: 12pt;
-  line-height: 1.5;
   color: black;
   background-color: black;
 }
@@ -72,8 +90,8 @@ a:hover {
 }
 
 #sketch {
-  height: 420px;
-  margin-right: 75px;
+  height: 420px; height: 26.25rem;
+  margin-right: 75px; margin-right: 4.6875rem;
 }
 
 #sketch-copyright a {
@@ -82,9 +100,9 @@ a:hover {
 
 #home-text {
   flex-direction: column;
-  height: 270px;
-  width: 350px;
-  font-size: 13pt;
+  height: 270px; height: 16.875rem;
+  width: 350px; width: 21.875rem;
+  font-size: 13pt; font-size: 1.085rem;
   line-height: 1.6;
 }
 
@@ -99,12 +117,12 @@ a:hover {
   color: #f2f2f2;
   font-family: Helvetica, sans-serif;
   font-weight: 700;
-  font-size: 22pt;
+  font-size: 22pt; font-size: 1.84rem;
   background: #397cac;
-  border-radius: 30px;
-  width: 315px;
-  padding: 8px;
-  margin-left: -50px;
+  border-radius: 30px; border-radius: 1.875rem;
+  width: 315px; width: 19.6875rem;
+  padding: 5px; padding: 0.5rem;
+  margin-left: -50px; margin-left: -3.125rem;
   text-align: center;
   position: relative;
 }
@@ -121,11 +139,11 @@ a:hover {
   position: absolute;
   z-index: 0;
   bottom: 0;
-  left: -18px;
-  height: 30px;
-  width: 30px;
+  left: -18px; left: -1.125rem;
+  height: 30px; height: 1.875rem;
+  width: 30px; width: 1.875rem;
   background: #397cac;
-  border-bottom-right-radius: 15px;
+  border-bottom-right-radius: 15px; border-bottom-right-radius: 0.9375rem;
 }
 
 #speech-bubble:after {
@@ -133,11 +151,11 @@ a:hover {
   position: absolute;
   z-index: 1;
   bottom: 0;
-  left: -20px;
-  width: 20px;
-  height: 31px;
+  left: -20px; left: -1.25rem;
+  width: 20px; width: 1.25rem;
+  height: 31px; height: 1.9375rem;
   background: #020202;
-  border-bottom-right-radius: 20px;
+  border-bottom-right-radius: 20px; border-bottom-right-radius: 1.25rem;
 }
 
 .icon, .icon:visited, .icon:active, .icon:focus {
@@ -151,16 +169,16 @@ a:hover {
 }
 
 .home-icon, .home-icon:visited, .home-icon:active, .home-icon:focus {
-  font-size: 18pt;
-  margin-right: 12px;
+  font-size: 18pt; font-size: 1.5rem;
+  margin-right: 12px; margin-right: 0.75rem;
 }
 
 #arrow-wrapper {
   position: absolute;
-  bottom: 10px;
-  right: 30px;
-  height: 55px;
-  width: 35px;
+  bottom: 10px; bottom: 0.625rem;
+  right: 30px; right: 1.875rem;
+  height: 55px; height: 3.4375rem;
+  width: 35px; width: 2.1875rem;
   text-align: center;
   -webkit-animation: bounce 1s linear infinite;
   animation: bounce 1s linear infinite;
@@ -168,7 +186,7 @@ a:hover {
 
 #arrow {
   color: #e6e6e6;
-  font-size: 45px;
+  font-size: 45px; font-size: 2.8125rem;
 }
 
 @-webkit-keyframes bounce {
@@ -177,7 +195,7 @@ a:hover {
   }
 
   50% {
-    padding-bottom: 15px;
+    padding-bottom: 15px; padding-bottom: 0.9375rem;
   }
 
   100% {
@@ -191,7 +209,7 @@ a:hover {
   }
 
   50% {
-    padding-bottom: 15px;
+    padding-bottom: 15px; padding-bottom: 0.9375rem;
   }
 
   100% {
@@ -200,8 +218,8 @@ a:hover {
 }
 
 .section-container {
-  width: 800px;
-  margin: 60px;
+  width: 800px; width: 50rem;
+  margin: 60px; margin: 3.75rem;
 }
 
 /* about section */
@@ -209,8 +227,8 @@ a:hover {
 h1 {
   font-family: Helvetica, sans-serif;
   font-weight: 700;
-  margin-bottom: 22px;
-  font-size: 17pt; 
+  margin-bottom: 22px; margin-bottom: 1.375rem;
+  font-size: 17pt; font-size: 1.42rem;
 }
 
 .header {
@@ -228,7 +246,7 @@ h1 {
   top: 49%;
   border-bottom: 1px solid black;
   width: 2000%;
-  margin: 0 10px;
+  margin: 0 10px; margin: 0 0.625rem;
 }
 
 .header > span:after {
@@ -241,10 +259,10 @@ h1 {
 
 #portrait-container {
   float: right;
-  height: 200px;
-  width: 200px;
-  margin: 0 10px 30px 40px;
-  perspective: 1000px;
+  height: 200px; height: 12.5rem;
+  width: 200px; width: 12.5rem;
+  margin: 0 10px 30px 40px; margin: 0 0.625rem 1.875rem 2.5rem;
+  perspective: 1000px; perspective: 62.5rem;
 }
 
 #portrait-inner {
@@ -272,7 +290,7 @@ h1 {
 }
 
 #portrait1, #portrait2 {
-  height: 200px;
+  height: 200px; height: 12.5rem;
 }
 
 /* education section */
@@ -281,8 +299,8 @@ h1 {
   background-color: rgba(230, 230, 230, 0.5);
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
-  padding: 10px 40px 30px 40px;
-  width: 700px;
+  padding: 10px 40px 30px 40px; padding: 0.625rem 2.5rem 2.5rem 2.5rem;
+  width: 700px; width: 43.75rem;
 }
 
 .center-header {
@@ -290,7 +308,7 @@ h1 {
 }
 
 .bold-header {
-  font-size: 13pt;
+  font-size: 13pt; font-size: 1.085rem;
   font-weight: 700;
 }
 
@@ -306,15 +324,15 @@ ul {
 .skill-row {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -5px;
+  margin-top: -5px; margin-top: -0.3125rem;
 }
 
 a.skill-box, a.skill-box:visited, a.skill-box:active, a.skill-box:focus {
-  font-size: 11pt;
+  font-size: 11pt; font-size: 0.92rem;
   color: white;
   background-color: #8f0000;
-  padding: 1px 5px;
-  margin: 5px 7px 0 0;
+  padding: 1px 5px; padding: 0.0625rem 0.3125rem;
+  margin: 5px 7px 0 0; margin: 0.3125rem 0.4375rem 0 0;
   font-weight: normal;
 }
 
@@ -327,9 +345,9 @@ a.skill-box:hover {
 /* experience section */
 
 .experience-box {
-  margin-bottom: 20px;
-  padding-left: 20px;
-  border-left: 5pt solid;
+  margin-bottom: 20px; margin-bottom: 1.25rem;
+  padding-left: 20px; padding-left: 1.25rem;
+  border-left: 5pt solid; border-left: 0.42rem solid;
 }
 
 .at-symbol {
@@ -345,16 +363,16 @@ a.skill-box:hover {
 /* footer */
 
 .location-marker {
-  margin-bottom: 8px;
+  margin-bottom: 8px; margin-bottom: 0.5rem;
   font-style: italic;
 }
 
 .location-marker i {
-  margin-right: 8px;
+  margin-right: 8px; margin-right: 0.5rem;
 }
 
 .footer {
-  padding: 15px 20px 15px 20px;
+  padding: 15px 20px 15px 20px; padding: 0.9375rem 1.25rem 0.9375rem 1.25rem;
   color: #cccccc;
   border-bottom: 3pt solid #3d6d8f;
   opacity: 0;
@@ -367,7 +385,7 @@ a.skill-box:hover {
 }
 
 .footer-icon {
-  margin-right: 6px;
+  margin-right: 6px; margin-right: 0.375rem;
 }
 
 a.footer-link, a.footer-link:visited, a.footer-link:active, a.footer-link:focus {

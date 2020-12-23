@@ -23,17 +23,17 @@
 }
 
 .navbar-left {
-    margin-left: 15px;
+    margin-left: 15px; margin-left: 0.9375rem; 
 }
 
 .navbar-right {
-    margin-right: 15px;
+    margin-right: 15px; margin-right: 0.9375rem;
 }
 
 .navbar > div > a {
     display: block;
     text-align: center;
-    padding: 13px 5px;
+    padding: 13px 5px; padding: 0.8125rem 0.3125rem;
     text-decoration: none;
     font-weight: 600;
     color: white;
