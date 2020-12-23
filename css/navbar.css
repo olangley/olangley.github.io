@@ -18,6 +18,11 @@
     float: left;
 }
 
+.navbar-icon {
+    font-size: 18pt; font-size: 1.5rem;
+    margin-top: 3px;
+}
+
 .navbar-right a {
     float: right;
 }
