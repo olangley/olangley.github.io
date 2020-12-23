@@ -1,10 +1,10 @@
 #preloader-container {
-  background-color: black;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 #preloader {
@@ -76,13 +76,13 @@
 }
 
 .loaded #preloader-container {
-  opacity: 0;
-  -webkit-transition: all 0.4s 0.4s ease-out;
-  transition: all 0.4s 0.4s ease-out;
+    opacity: 0;
+    -webkit-transition: all 0.4s 0.4s ease-out;
+    transition: all 0.4s 0.4s ease-out;
 }
 
 .loaded #preloader {
-  opacity: 0;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
 }
