@@ -13,12 +13,12 @@ html, body {
 
 /* Fluid-responsive font sizes from https://websemantics.uk/tools/responsive-font-calculator/ */
 
-/* 16px @ 1408px increasing to 22px @ 1920px */
+/* 16px @ 1408px increasing to 20px @ 1920px */
 @media (min-width: 1408px) {
-  html {
-    font-size: calc(1rem + ((1vw - 14.08px) * 1.1719));
+  body {
+    font-size: calc(1rem + ((1vw - 14.08px) * 0.7813));
     /* Note: The calc base value (1rem) MUST be stated in REM to maintain accessibility */
-    /* Where: 1.1719 = 100 * font-size_difference / viewport_width_difference */
+    /* Where: 0.7813 = 100 * font-size_difference / viewport_width_difference */
 
     /* Safari resize fix */
     min-height: 0vw;
@@ -26,8 +26,8 @@ html, body {
 }
 /* Prevent scaling beyond this breakpoint */
 @media (min-width: 1920px) {
-  html {
-    font-size: 22px;
+  body {
+    font-size: 20px;
   }
 }
 
@@ -376,9 +376,9 @@ h1 {
 /* Education section */
 
 #education-container {
-  background-color: rgba(230, 230, 230, 0.4);
-  -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px);
+  background-color: rgba(230, 230, 230, 0.3);
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
   padding: 10px 40px 30px 40px; padding: 0.625rem 2.5rem 2.5rem 2.5rem;
   width: 700px; width: 43.75rem;
 }
@@ -546,6 +546,10 @@ a.footer-link:hover {
 
 /* Large mobile device (portrait) */
 @media only screen and (max-width: 700px) and (orientation: portrait) {
+  body {
+    line-height: 1.6;
+  }
+
   h1 {
     font-size: 15pt;
   }
@@ -599,42 +603,15 @@ a.footer-link:hover {
   }
 
   .section-container {
-    margin: 20px 25px;
+    margin: 25px;
   }
 
   #education-container {
     margin: 40px 25px;
-    padding: 0 18px 20px 18px;
+    padding: 0 20px 20px 20px;
   }
 
   .experience-box {
     padding-left: 12px;
   }
 }
-
-/* Small mobile device (portrait) */
-@media only screen and (max-width: 350px) and (orientation: portrait) {
-  #sketch {
-    height: 180px;
-  }
-
-  #home-text {
-    font-size: 11pt;
-    height: 200px;
-    width: 250px;
-    margin-top: 15px;
-  }
-
-  #speech-bubble {
-    font-size: 18pt;
-  }
-
-  .section-container {
-    margin: 20px;
-  }
-
-  #education-container {
-    margin: 40px 20px;
-    padding: 0 15px 15px 15px;
-  }
-} 
